@@ -1,0 +1,370 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: rgb(51, 51, 51) solid 1px;
+  border-bottom-width: 0px;
+  box-shadow: 2px 2px 4px #e9e8e8;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  img {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 50px;
+    transition: all .45s;
+    cursor: pointer;
+  }
+}
+
+.logo img:hover {
+  opacity: 0.7;
+}
+
+.pages {
+  width: 570px;
+
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Comfortaa', cursive;
+
+  a {
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+    color: black;
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      p {
+
+        font-size: 13px;
+        display: flex;
+        flex-wrap: wrap;
+        transition: all .45s;
+
+      }
+
+      img {
+        width: 36px;
+        height: 36px;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.active-color {
+  color: rgb(221, 15, 15);
+}
+
+.pages a div:hover {
+  p {
+    color: rgb(221, 15, 15);
+  }
+}
+
+.pages a::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 12px;
+  width: 1px;
+  height: 30px;
+  background: #ebebeb;
+
+}
+
+.location {
+  width: 80px;
+  margin-top: 20px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+
+  p {
+    position: relative;
+  }
+}
+
+.location p::after {
+  content: "";
+  position: absolute;
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/892/892498.svg?token=exp=1617820233~hmac=4112aba8134eab7444935dce0eeb20d2');
+  top: 3px;
+  left: 46px;
+  width: 12px;
+  height: 13px;
+  background-position: center;
+  background-size: cover;
+}
+
+.info-users-block {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  .header-call {
+    p {
+      font-family: 'Comfortaa', cursive;
+      text-align: center;
+    }
+  }
+
+  .header-order {
+    width: 55px;
+    height: 45px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+
+    img {
+
+      width: 28px;
+      height: 28px;
+      transform: rotateY(180deg);
+    }
+
+    span {
+      display: block;
+      width: 30px;
+      font-size: 13px;
+      margin-right: 2px;
+      text-align: right;
+    }
+
+    div {
+      font-size: 11px;
+      box-sizing: border-box;
+    }
+  }
+
+  .header-user {
+    font-family: 'Comfortaa', cursive;
+
+    a {
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all .45s;
+    }
+  }
+
+  .header-user a:hover {
+    color: rgb(221, 15, 15);
+  }
+
+  .header-lang {
+    width: 48px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    margin-top: 20px;
+
+    p {
+      position: relative;
+    }
+  }
+}
+
+.tell-request {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: all .45s;
+}
+
+.tell-phone {
+  color: rgb(221, 15, 15);
+  font-size: 20px;
+  transition: all .45s;
+  margin-bottom: 0px;
+}
+
+.header-call:hover {
+  .tell-request {
+    color: rgb(221, 15, 15);
+  }
+
+  .tell-phone {
+    color: black;
+  }
+}
+
+.header-call:hover {
+  .tell-request {
+    color: rgb(221, 15, 15);
+  }
+
+  .tell-phone {
+    color: black;
+  }
+
+}
+
+.header-lang p::after {
+  content: "";
+  position: absolute;
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/892/892498.svg?token=exp=1617820233~hmac=4112aba8134eab7444935dce0eeb20d2');
+  top: 3px;
+  left: 34px;
+  width: 12px;
+  height: 13px;
+  background-position: center;
+  background-size: cover;
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.empty-block{
+  display: none;
+  width: 100%;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 39%;
+  left: 93%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #616161;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 101px;
+  left: -100%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  
+  color: white;
+  margin: 0;
+  padding: 13px 0;
+  list-style: none;
+  background-color: black;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+  
+  hr{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+  }
+}
+
+.menu__item {
+  display: block;
+  padding: 0px 0px;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.active-burger{
+  color: red;
+}
+
+@media (max-width: 1000px) {
+  .pages{
+    display: none;
+  }
+  .hamburger-menu{
+    display: block;
+  }
+  .empty-block{
+    display: block;
+  }
+
+  .location{
+    display: none;
+  }
+  .header-call{
+    display: none;
+  }
+  .header-lang{
+    display: none;
+  }
+
+  .logo{
+    margin-left: 5%;
+    img {
+      width: 90px;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .empty-block{
+    width: 40%;
+  }
+}

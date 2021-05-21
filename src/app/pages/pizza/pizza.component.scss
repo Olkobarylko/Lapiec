@@ -1,0 +1,694 @@
+.fast-placed {
+  margin-top: 100px;
+  width: 100%;
+  height: 159px;
+  background-image: url('https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/img/delivery-pattern.jpg');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moto {
+  margin-top: 38px;
+  margin-left: -48px;
+  position: relative;
+
+  img {
+    width: 130px;
+    height: 180px;
+  }
+}
+
+.moto::after {
+  content: "вже в дорозі";
+  position: absolute;
+  padding-left: 30px;
+  padding-top: 10px;
+  left: 77px;
+  background-image: url('https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/delivery-message.svg');
+  width: 130px;
+  height: 70px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  color: rgb(223, 219, 219);
+}
+
+.info-fast {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  div {
+    width: 441px;
+    height: 60px;
+    text-align: center;
+  }
+}
+
+.btn-zones {
+  margin-top: 40px;
+
+  a {
+    width: 230px;
+    height: 48px;
+    background-color: rgb(247, 194, 0);
+    padding: 16px 46px 14px;
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    line-height: 16px;
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    border: 1px solid #f7c200;
+    border-radius: 22px;
+    transition: .25s all;
+  }
+
+  a:hover {
+    background-color: transparent;
+    color: rgb(247, 194, 0);
+  }
+}
+
+.time-zones {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+  span {
+    color: rgb(247, 194, 0);
+
+  }
+
+  p {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    line-height: 30px;
+  }
+}
+
+.shedule-zones {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+  span {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+  }
+
+  p {
+    color: rgb(247, 194, 0);
+    margin-bottom: 0px;
+  }
+}
+
+.photos-fast {
+  position: relative;
+
+  img {
+    margin-top: 89px;
+    height: 70px;
+    width: 140px;
+  }
+
+}
+
+.photos-fast::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 65px;
+  top: 10px;
+  transform: rotate(11deg) translateX(0);
+  background-image: url('https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/apple.svg');
+  background-repeat: no-repeat;
+
+}
+
+.container-salads {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.block-salad {
+  width: 480px;
+  height: 800px;
+  margin-left: 12px;
+  margin-right: 12px;
+  text-align: center;
+  position: relative;
+  transition: all .45s;
+  transform: translateY(0);
+  z-index: 2;
+
+  span {
+    position: absolute;
+    line-height: 65px;
+    padding-right: 15px;
+    width: 480px;
+    height: 65px;
+    top: 450px;
+    left: 0px;
+    color: white;
+    text-align: right;
+    box-shadow: rgba(0, 0, 0, 0.93) 0px -65px 35px -45px inset;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+  }
+
+  .overflow {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-prod {
+    width: 480px;
+    height: 515px;
+    background-size: cover;
+    transition: all .3s linear;
+    overflow: hidden;
+  }
+
+  h5 {
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: 'Comfortaa', cursive;
+    height: 50px;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    // width: 480px;
+    height: 45px;
+  }
+
+  h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .table-salads {
+    width: 480px;
+    height: 55px;
+    border: 1px solid rgb(204, 204, 204);
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  .block-info {
+    width: 128px;
+    height: 55px;
+    position: relative;
+
+    div,
+    h4 {
+      padding-top: 5px;
+      color: rgb(51, 51, 51);
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h4 {
+      font-weight: bold;
+    }
+  }
+
+  .block-info::before {
+    content: "";
+    left: 120px;
+    top: 6px;
+    position: absolute;
+    height: 43px;
+    width: 1px;
+    background-color: #ccc;
+  }
+}
+
+.order-prod {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  margin-left: 70px;
+
+  span {
+    position: relative;
+    padding-right: 15px;
+    width: 480px;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    text-align: right;
+    box-shadow: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 28px;
+    line-height: 36px;
+    color: #c80000;
+  }
+
+  i {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(51, 51, 51);
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    margin-left: -8px;
+  }
+}
+
+.prod-count {
+  img {
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  input {
+    width: 40px;
+    height: 40px;
+    margin: 0px 7px;
+    text-align: center;
+  }
+}
+
+.prod-price {
+  a {
+    transition: .45s all;
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    width: 107px;
+    height: 28px;
+    border-radius: 22px;
+    background-color: #c80000;
+    border: 1px solid #c80000;
+    font-size: 13px;
+    font-family: "Comfortaa", cursive;
+    color: #fefefe;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  a:hover {
+    background-color: white;
+    color: rgb(221, 15, 15);
+  }
+}
+
+
+
+.block-salad::before {
+  content: "";
+  width: 490px;
+  height: 760px;
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: -5px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 11px 6px;
+  transition: all .45s;
+  background-color: white;
+  z-index: -1000;
+}
+
+.block-salad:hover::before {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: -1000;
+}
+
+.block-salad:hover .image-prod {
+  margin-left: -30px;
+  transform: scale(1.5);
+  z-index: -1000;
+}
+
+.buble {
+  position: absolute;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  transition-property: margin-top;
+  transition: all .3s linear;
+  opacity: 0;
+  cursor: pointer;
+
+  p {
+    font-family: "Comfortaa", cursive;
+    transition: all .3s linear;
+  }
+}
+
+.block-salad:hover {
+  .buble {
+    margin-top: 30px;
+    text-align: center;
+    opacity: 1;
+  }
+}
+
+.buble:hover {
+  p {
+    color: rgb(221, 15, 15);
+  }
+}
+
+@media (max-width: 1500px) {
+  .container-salads {
+    justify-content: space-around;
+
+  }
+
+  .block-salad {
+    width: 370px;
+    height: 740px;
+
+    span {
+      width: 370px;
+      height: 65px;
+      top: 350px;
+    }
+
+    .image-prod {
+      width: 370px;
+      height: 415px;
+    }
+
+    p {
+      // width: 370px;
+    }
+
+  }
+
+  .prod-price {
+    a {
+      margin-left: 65%;
+    }
+  }
+
+  .order-prod {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 250px;
+    margin-left: 65px;
+
+    span {
+      position: relative;
+      padding-right: 15px;
+      width: 370px;
+      height: 65px;
+      top: 0px;
+      left: 0px;
+      text-align: right;
+      box-shadow: none;
+      font-family: 'Comfortaa', cursive;
+      font-size: 28px;
+      line-height: 36px;
+      color: #c80000;
+    }
+  }
+
+
+
+
+  .block-salad::before {
+    content: "";
+    width: 380px;
+    height: 700px;
+
+  }
+
+  .block-salad:hover::before {
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: -1000;
+  }
+
+  .block-salad:hover .image-prod {
+    margin-left: -30px;
+    transform: scale(1.5);
+    z-index: -1000;
+  }
+
+  .buble {
+    position: absolute;
+    margin-top: 50px;
+    text-align: center;
+    transition-property: margin-top;
+    transition: all .3s linear;
+    opacity: 0;
+
+    p {
+      font-family: "Comfortaa", cursive;
+      transition: all .3s linear;
+    }
+  }
+
+
+
+}
+
+
+@media (max-width: 1200px) {
+  .fast-placed {
+    display: none;
+  }
+  .block-salad {
+    width: 345px;
+    height: 675px;
+
+    span {
+      width: 345px;
+      height: 65px;
+      top: 280px;
+    }
+
+    .image-prod {
+      width: 345px;
+      height: 345px;
+    }
+
+    p {
+      // width: 345px;
+    }
+
+  }
+
+  .prod-price {
+    a {
+      margin-left: 60%;
+    }
+  }
+
+  .order-prod {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 250px;
+    margin-left: 45px;
+
+    span {
+      position: relative;
+      padding-right: 15px;
+      width: 250px;
+      height: 65px;
+      top: 0px;
+      left: 0px;
+      text-align: right;
+      box-shadow: none;
+      font-family: 'Comfortaa', cursive;
+      font-size: 28px;
+      line-height: 36px;
+      color: #c80000;
+    }
+  }
+
+  .block-salad::before {
+    content: "";
+    width: 355px;
+    height: 630px;
+  }
+
+  .block-salad:hover::before {
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: -1000;
+  }
+
+  .block-salad:hover .image-prod {
+    margin-left: -30px;
+    transform: scale(1.5);
+    z-index: -1000;
+  }
+
+  .buble {
+    position: absolute;
+    margin-top: 50px;
+    text-align: center;
+    transition-property: margin-top;
+    transition: all .3s linear;
+    opacity: 0;
+
+    p {
+      font-family: "Comfortaa", cursive;
+      transition: all .3s linear;
+    }
+  }
+}
+
+@media (max-width: 745px) {
+  
+
+  .block-salad {
+    width: 100%;
+    height: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+    position: relative;
+    transition: all .45s;
+    transform: translateY(0);
+    z-index: 2;
+    display: flex;
+    margin-bottom: 70px;
+
+    span {
+      position: absolute;
+      line-height: 65px;
+      padding-top: 20px;
+      padding-right: 10px;
+      width: 130px;
+      height: 65px;
+      top: 65px;
+      left: 0px;
+      color: white;
+      text-align: right;
+      box-shadow: rgba(0, 0, 0, 0.93) 0px -65px 35px -45px inset;
+      font-family: 'Comfortaa', cursive;
+      font-size: 16px;
+    }
+    p{
+      min-height: 15px;
+      text-overflow: ellipsis;
+      white-space: wrap;
+      overflow: hidden;
+    }
+
+    .order-prod {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 15px;
+      width: 100%;
+
+      span {
+        display: block;
+        position: relative;
+        padding-right: 15px;
+        width: 100%;
+        height: 65px;
+        top: -15px;
+        left: 0px;
+        text-align: right;
+        box-shadow: none;
+        font-family: 'Comfortaa', cursive;
+        font-size: 28px;
+        line-height: 36px;
+        color: #c80000;
+      }
+
+      i {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 12px;
+        margin-right: 15px;
+        color: rgb(51, 51, 51);
+        font-family: 'Comfortaa', cursive;
+        font-style: normal;
+        margin-left: -8px;
+      }
+
+    }
+
+    .prod-price {
+      display: flex;
+
+      a {
+        margin-left: 15px;
+      }
+    }
+
+    .overflow {
+      position: relative;
+      overflow: visible;
+    }
+
+    .image-prod {
+      width: 130px;
+      height: 130px;
+      background-size: cover;
+      transition: all .3s linear;
+      overflow: hidden;
+    }
+
+    h5 {
+      text-align: left;
+      font-size: 18px;
+      font-family: 'Comfortaa', cursive;
+      height: 30px;
+      margin-top: 0px;
+      margin-left: 15px;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 16px;
+      min-height: 16px;
+      text-align: left;
+      margin-left: 15px;
+      margin-bottom: 10px;
+      text-overflow: ellipsis;
+    }
+
+  }
+
+  .block-salad::before {
+    content: none;
+    width: 355px;
+    height: 630px;
+  }
+
+  .buble {
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    text-align: center;
+    transition-property: margin-top;
+    transition: all .3s linear;
+    opacity: 0;
+
+    p {
+      font-family: "Comfortaa", cursive;
+      transition: all .3s linear;
+    }
+  }
+
+  .block-salad:hover .image-prod {
+    margin-left: 0px;
+    transform: none;
+  }
+
+  hr {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+}

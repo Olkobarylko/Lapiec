@@ -1,0 +1,28 @@
+<div class="main-block">
+  <div class="order-block" *ngFor="let order of ordersArray">
+    <div>
+      <p>Ім'я: {{order.firstName}}</p>
+      <p>Телефон: {{order.phone}}</p>
+    </div>
+    <div>
+      <p>Дата: {{order.date}}</p>
+      <p>Час: {{order.time}}</p>
+    </div>
+    <div>
+      <p>Місто: {{order.city}}</p>
+      <p>Будинок: {{order.home}}</p>
+      <p>Вулиця: {{order.street}}</p>
+    </div>
+    <textarea readonly class="form-control">{{order.comment}}</textarea>
+    <h6 style="margin-top: 10px;">Замовлення:</h6>
+    <div *ngFor="let prod of order.basket">
+      <p> Назва товару : {{prod.title}} <span>X {{prod.count}} шт. </span><span> </span> =<span>
+        </span>{{prod.count * prod.price}} грн.
+      </p>
+    </div>
+    <div style="display: flex;justify-content: space-between;">
+      <p>Усього: {{order.totalPrice}} грн</p>
+      <button class="btn btn-success" (click)="deleteOrder(order)">Done</button>
+    </div>
+  </div>
+</div>

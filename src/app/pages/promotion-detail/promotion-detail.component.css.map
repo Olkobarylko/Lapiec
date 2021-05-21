@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,MAAM;CAYnB;;AAfD,AAKE,OALK,CAKL,CAAC,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,KAAK;EAClB,WAAW,EAAE,4BAA4B;EACzC,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;CAClB",
+    "sources": [
+        "promotion-detail.component.scss"
+    ],
+    "names": [],
+    "file": "promotion-detail.component.css"
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "lapiec-6c366": {
+      "hosting": {
+        "lapiec": [
+          "lapiec-6c366"
+        ]
+      }
+    }
+  }
+}

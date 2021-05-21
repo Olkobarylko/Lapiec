@@ -1,0 +1,62 @@
+<form>
+  <div class="mb-3">
+    <label for="title" class="form-label">Введіть Заголовок Акції:</label>
+    <input name="title" type="text" class="form-control" id="title" [(ngModel)]="titleName" name="titleName">
+  </div>
+  <div class="mb-3">
+    <label for="text" class="form-label">Введіть опис Акції:</label>
+    <textarea name="text" class="form-control" id="text" cols="30" rows="3" [(ngModel)]="layoutName"
+      name="layoutName"></textarea>
+  </div>
+  
+  <ng-container *ngIf="!imageStatus; else elseTemplate">
+    <div class="custom-file">
+      <input (change)="uploadFile($event)" type="file" class="custom-file-input" id="urlImage" required>
+      <label class="custom-file-label" for="urlImage">Choose file...</label>
+    </div>
+    <div class="progress mt-3 mb-3">
+      <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+        [style.width]="(uploadPercent | async) + '%'" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </ng-container>
+
+  <ng-template #elseTemplate>
+    <div style="display: flex;align-items: center;" class="image mb-3">
+      <img style="display: block;margin-right: 20px ;" [src]="image" alt="" width="300px">
+      <i style="cursor: pointer;" class="bi bi-trash-fill ml-3" (click)="deleteImage()"></i>
+    </div>
+  </ng-template>
+
+  <button *ngIf="!editStatus" type="button" class="btn btn-success" (click)="addProm()">Добавити</button>
+  <button *ngIf="editStatus" type="button" class="btn btn-primary" (click)="saveProm()">Зберегти</button>
+</form>
+<hr class="mb-3 mt-3">
+<table style="text-align: center;" class="table align-middle">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Text</th>
+      <th scope="col">Image</th>
+      <th scope="col">Visible</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prom of promArray">
+      <td>{{prom.title}}</td>
+      <td>{{prom.layout}}</td>
+      <td>
+        <img src="{{prom.image}}" width="100px" alt="">
+      </td>
+      <td [textContent]="prom.isVisible ? 'Visible' : 'Hidden'"
+        [ngClass]="prom.isVisible ? 'text-success' : 'text-danger'"></td>
+      <td>
+        <button class="btn btn-warning" (click)="editProm(prom)">Редагувати</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteBlog(prom)" [class.disabled] = "editStatus">Видалити</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,31 @@
+<header>
+  <h3 class="header-component">Особистий кабінет</h3>
+</header>
+<section>
+  <div class="main-block">
+    <form [formGroup]="profileForm" (ngSubmit)="submitProfile()">
+      <h5>Персональні дані</h5>
+      <input class="simpleInput" formControlName='phone' type="text" placeholder="Телефон*">
+      <input type="text" formControlName='firstName' placeholder="Ваше ім`я*">
+      <input type="text" formControlName='date_birth' placeholder="День народження">
+      <h5>Адреси доставки</h5>
+      <select class="city-check" formControlName='city'>
+        <option value="Львів" selected>Львів</option>
+        <option value="Брюховичі">Брюховичі</option>
+        <option value="Зубра">Зубра</option>
+        <option value="Зимна вода">Зимна вода</option>
+        <option value="Коноптиця">Коноптиця</option>
+        <option value="Лапаївка">Лапаївка</option>
+        <option value="Рудне">Рудне</option>
+        <option value="Скнилів">Скнилів</option>
+      </select>
+      <input formControlName='street' class="street" type="text" placeholder="Вулиця">
+      <input formControlName='number_home' class="build" type="text" placeholder="Номер б...">
+     <div style="display: flex; justify-content: space-between;">
+      <button class="btn-profile" type="submit">Зберегти</button>
+      <button class="btn-profile" (click)="profileSingOut()" type="button">Вийти</button>
+     </div>
+
+    </form>
+  </div>
+</section>

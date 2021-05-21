@@ -1,0 +1,128 @@
+<div class="heding-route"><span class="span-head" [routerLink]="[ '/pizza']">Головна </span><span> - </span><span
+    class="span-pizza" [routerLink]="[ '/pizza']">Піца</span><span> -
+  </span><span>{{oneProd.title}}</span></div>
+<section>
+  <div class="content">
+    <div [ngStyle]="{'background-image': 'url(' + oneProd.image + ')'}"
+      class="image"></div>
+    <div class="info">
+      <h1>{{oneProd.title}}</h1>
+      <p>{{oneProd.describe}}</p>
+      <div style="font-size: 14px;padding-bottom:8px;">Поживна харчова цінність на 100 г продукту:</div>
+      <div class="table">
+        <div class="block-info">
+          <div>Білки</div>
+          <h4>{{oneProd.proteins}}</h4>
+        </div>
+        <div class="block-info">
+          <div>Вуглеводи</div>
+          <h4>{{oneProd.carbohydrates}}</h4>
+        </div>
+        <div class="block-info">
+          <div>Жири</div>
+          <h4>{{oneProd.jury}}</h4>
+        </div>
+        <div class="block-info">
+          <div>Калорійність</div>
+          <h4>{{oneProd.caloric}}</h4>
+        </div>
+      </div>
+      <div class="size-vs-weight">
+        <div class="size">
+          <img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/size.svg" alt="size">
+          <p>Розмір:</p>
+          <span>{{oneProd.size}} см</span>
+        </div>
+        <div class="weigth"><img
+            src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/weight.svg" alt="size">
+          <p>Вага:</p>
+          <span>{{oneProd.weight}} гр</span>
+        </div>
+      </div>
+      <hr>
+      <div class="components">
+        <div class="leftcomponent"><a href="#">
+            <span><i></i></span>
+            <p class="addComp">Додати складники</p>
+          </a></div>
+        <div class="rigthcomponent">
+          <p>Складників до піци: </p>
+          <span class="ingTotalPrice">0</span><i>грн</i>
+        </div>
+      </div>
+      <hr>
+      <div class="prod-count">
+        <p class="one-count">Кількість:</p>
+        <div style="margin-left: -60px;margin-top: -2px;"><img
+            src="https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fpromotions%2Fredminus.png?alt=media&token=a0bfc7a0-26d2-4ae2-adf1-193b197792b4"
+            alt="" (click)="changeProductCount(oneProd,false)">
+          <input type="text" [value]="oneProd.count">
+          <img src="https://www.pngkey.com/png/full/6-60004_plus-sign-images-clipart-best-2hluoq-clipart-red.png" alt=""
+            (click)="changeProductCount(oneProd,true)"></div>
+        <div class="rigth-count">
+          <p class="all-count">Загалом: </p>
+          <span class="ingTotalPrice">{{oneProd.price * oneProd.count}}</span><i>грн</i>
+        </div>
+      </div>
+      <div class="prod-price">
+        <a (click)="addToBusket(oneProd)">ЗАМОВИТИ</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="margin-top: 80px;">
+  <div>
+    <h2>Додатки до піци</h2>
+    <div class="more-gradient">
+      <div class="block-grad">
+        <div
+          style="background-image: url('https://www.lapiec-pizza.com.ua/wp-content/uploads/2019/03/ing-21-250x150.jpg');"
+          class="img-block">
+        </div>
+        <p>Соус барбекю</p>
+        <i>50 гр</i>
+        <span>19 грн</span>
+      </div>
+      <div class="block-grad">
+        <div style="background-image: url('https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/08/ing-22.jpg');"
+          class="img-block">
+        </div>
+        <p>Соус Цезар</p>
+        <i>50 гр</i>
+        <span>19 грн</span>
+      </div>
+      <div class="block-grad">
+        <div style="background-image: url('https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/08/ing-1.jpg');"
+          class="img-block">
+        </div>
+        <p>Сир пармезан</p>
+        <i>50 гр</i>
+        <span>50 грн</span>
+      </div>
+      <div class="block-grad">
+        <div style="background-image: url('https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/08/ing-2.jpg');"
+          class="img-block">
+        </div>
+        <p>Сир моцарела</p>
+        <i>100 гр</i>
+        <span>38 грн</span>
+      </div>
+      <div class="block-grad">
+        <div style="background-image: url('https://www.lapiec-pizza.com.ua/wp-content/uploads/2020/08/telyatyna1.jpg');"
+          class="img-block">
+        </div>
+        <p>Телятина</p>
+        <i>50 гр</i>
+        <span>57 грн</span>
+      </div>
+      <div class="block-grad">
+        <div style="background-image: url('https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/08/ing-4.jpg');"
+          class="img-block">
+        </div>
+        <p>Шинка</p>
+        <i>50 гр</i>
+        <span>38 грн</span>
+      </div>
+    </div>
+  </div>
+</section>

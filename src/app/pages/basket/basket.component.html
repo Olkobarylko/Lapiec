@@ -1,0 +1,100 @@
+<div *ngIf="!checkBasketBoolean">
+  <h3 class="header-component">Оформити замовлення</h3>
+  <section>
+    <div class="left-block block">
+      <h6 style="margin-bottom: 30px;">Оберіть спосіб доставки</h6>
+      <div class="radio-item">
+        <input type="radio" id="ritema" name="ritem" value="ropt1" checked>
+        <label for="ritema">Доставка</label>
+      </div>
+      <div class="radio-item">
+        <input type="radio" id="ritemb" name="ritem" value="ropt2">
+        <label for="ritemb">Самовивіз</label>
+      </div>
+      <div style="margin-bottom: 20px;" class="radio-item">
+        <input type="radio" id="ritemr" name="ritem" value="ropt3">
+        <label for="ritemr">Заздалегідь</label>
+      </div>
+      <span>
+        <input type="text" placeholder="Ваше ім'я" [(ngModel)]="firstName" name="firstName" (ngModelChange)="onChangePhone($event)">
+      </span>
+      <span>
+        <input type="text" placeholder="Телефон*" [(ngModel)]="phone" name="phone" (ngModelChange)="onChangefirstName($event)">
+      </span>
+      <span>
+        <input class="data" type="text" placeholder="Введіть дату*" [(ngModel)]="date" name="date">
+        <input class="time" type="text" placeholder="Введіть часовий інтервал*" [(ngModel)]="time" name="time">
+      </span>
+      <span>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Ваш коментар" [(ngModel)]="comment"
+          name="comment"></textarea>
+      </span>
+      <div class="city">
+        <select class="city-check" [(ngModel)]="city" name="city">
+          <option value="Львів" selected>Львів</option>
+          <option value="Брюховичі">Брюховичі</option>
+          <option value="Зубра">Зубра</option>
+          <option value="Зимна вода">Зимна вода</option>
+          <option value="Коноптиця">Коноптиця</option>
+          <option value="Лапаївка">Лапаївка</option>
+          <option value="Рудне">Рудне</option>
+          <option value="Скнилів">Скнилів</option>
+        </select>
+        <input class="street" type="text" [(ngModel)]="street" name="street" placeholder="Вулиця"
+          (ngModelChange)="onChange($event)">
+        <input class="build" type="text" placeholder="Номер б..." [(ngModel)]="home" name="home">
+      </div>
+    </div>
+    <div class="right-block block">
+      <div class="products-block">
+        <div class="tr">
+          <div style="width: 15px;" class="td"></div>
+          <div class="product-block td">Товар</div>
+          <div class="prise-block td">Ціна</div>
+          <div class="qountity-block td">Кількість</div>
+          <div class="all-block td">Загалом</div>
+        </div>
+        <div *ngFor="let prod of basket" class="trr">
+          <div class="cross"><img (click)="deleteProd(prod)"
+              src="https://www.maxpixel.net/static/photo/1x/Abort-Remove-Red-Cross-Error-Cancel-Delete-156119.png"
+              alt="">
+          </div>
+          <div class="header-image">
+            <img class="img-hover" [src]="prod.image" alt="">
+          </div>
+          <div class="nameProd">{{prod.title}}</div>
+          <div class="price"><span>{{prod.price}} грн</span></div>
+          <div class="prod-count">
+            <img (click)=" changeProductCount(prod,false)"
+              src="https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fpromotions%2Fredminus.png?alt=media&token=a0bfc7a0-26d2-4ae2-adf1-193b197792b4"
+              alt="">
+            <input class="input-count" type="text" [value]="prod.count">
+            <img (click)=" changeProductCount(prod,true)"
+              src="https://www.pngkey.com/png/full/6-60004_plus-sign-images-clipart-best-2hluoq-clipart-red.png" alt="">
+          </div>
+          <div class="price"><span>{{prod.price * prod.count}} грн</span></div>
+        </div>
+        <div class="trrr">
+          <span style="display: flex;">
+            <p>Загалом:</p><span class="red-font">{{totalPrice}} грн</span>
+          </span>
+        </div>
+      </div>
+      <div style="margin-top: 40px;" class="radio-item">
+        <input type="radio" id="ritemgo" name="ritemw" value="ropt1">
+        <label for="ritemgo">Оплата готівкою</label>
+      </div>
+      <div class="radio-item">
+        <input type="radio" id="ritemn" name="ritemw" value="ropt2" checked>
+        <label for="ritemn">Безготівкова оплата</label>
+      </div>
+      <div class="btn-submit"><button (click)="orderProducts()" [disabled]='!checkNameTelDis'>ОФОРМИТИ
+          ЗАМОВЛЕННЯ</button></div>
+    </div>
+  </section>
+</div>
+<section *ngIf="checkBasketBoolean">
+  <h4 style="margin-top: 150px;margin-bottom: 50px;">
+    Кошик є порожнім
+  </h4>
+</section>

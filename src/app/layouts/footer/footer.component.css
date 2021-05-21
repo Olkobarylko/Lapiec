@@ -1,0 +1,240 @@
+footer {
+  width: 100%;
+  height: 615px;
+  background-image: url("https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/img/footer1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-info {
+  width: 380px;
+}
+
+.footer-info img {
+  width: 190px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+
+.footer-info img:hover {
+  opacity: 0.9;
+}
+
+.footer-info .logo-massengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  margin-top: 25px;
+}
+
+.footer-info .logo-massengers span {
+  display: block;
+}
+
+.footer-info .logo-massengers div {
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-size: 27px 20px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 6px;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+  background-size: 20px 20px;
+  background-position: center;
+}
+
+.footer-info .logo-massengers .facebook {
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/2111/2111393.svg?token=exp=1618480756~hmac=605d477ee6d6d97f69fd3e0f2092c765");
+}
+
+.footer-info .logo-massengers .facebook:hover {
+  background-color: #337ab7;
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/2111/2111392.svg?token=exp=1618480859~hmac=99fa024ae3ddd97d791fa9cc71e85748");
+}
+
+.footer-info .logo-massengers .insta {
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/2111/2111463.svg?token=exp=1618480885~hmac=920d0f99ed102918611b159cbc4e9b65");
+}
+
+.footer-info .logo-massengers .insta:hover {
+  background-color: #c90668;
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/2111/2111491.svg?token=exp=1618480889~hmac=e6442eba9f211756c96946e6d697865a");
+}
+
+.footer-info .logo-massengers .envelope {
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/855/855502.svg?token=exp=1618480923~hmac=03932b949b621421aea359fffd6e73d1");
+}
+
+.footer-info .logo-massengers .envelope:hover {
+  background-color: #f7f30a;
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/855/855553.svg?token=exp=1618480931~hmac=9e30b0b9f1fc1f5d6e1a26e7247d20b0");
+}
+
+.footer-info .logo-massengers .tiktoc {
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/3046/3046121.svg?token=exp=1618480954~hmac=9daa425420f3e1052a2a167832c25fd8");
+}
+
+.footer-info .logo-massengers .tiktoc:hover {
+  background-color: black;
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/3046/3046123.svg?token=exp=1618481021~hmac=6b3cef4e96bf8db52d8789f53d33e322");
+}
+
+.footer-info .logo-massengers .youtube {
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/1384/1384060.svg?token=exp=1618480979~hmac=9631a569004bc3196974313f5e8a696f");
+}
+
+.footer-info .logo-massengers .youtube:hover {
+  background-color: red;
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/1384/1384028.svg?token=exp=1618480982~hmac=5edf4d3f644b296ea06b87504924faa3");
+}
+
+.footer-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+}
+
+.footer-categories ul {
+  list-style-type: none;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 15px;
+}
+
+.footer-categories ul li {
+  padding-top: 9px;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+  outline: none;
+}
+
+.footer-categories ul li:hover {
+  color: #f7c200;
+}
+
+.footer-location {
+  height: 260px;
+  width: 550px;
+  margin-left: 90px;
+}
+
+.footer-location .icon-loc {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.footer-location p {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  margin-top: 12px;
+  text-align: center;
+  color: white;
+}
+
+.active-li {
+  color: #f7c200;
+}
+
+.phone-hover {
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+
+.phone-hover:hover {
+  color: #f7c200;
+}
+
+.footer-location-footer {
+  text-align: center;
+}
+
+.footer-location-footer h6 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-down-block {
+  margin-top: 25px;
+  height: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  width: 98%;
+  margin-left: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-down-block .right-blockdown {
+  width: 182px;
+}
+
+.footer-down-block .right-blockdown a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-down-block .right-blockdown a img {
+  width: 75px;
+  height: 40px;
+}
+
+.footer-down-block .right-blockdown a p {
+  margin-top: 10px;
+  margin-right: 5px;
+  position: relative;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+
+.right-blockdown a p::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  margin-right: 200px;
+  width: 0px;
+  height: 3px;
+  background-color: red;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.right-blockdown a p:hover::before {
+  content: "";
+  width: 100px;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+/*# sourceMappingURL=footer.component.css.map */

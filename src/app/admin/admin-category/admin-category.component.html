@@ -1,0 +1,38 @@
+<form>
+  <div class="mb-3">
+    <label for="name" class="form-label">Назва:</label>
+    <input [(ngModel)]="nameCat" name="nameCat" type="text" class="form-control" id="name">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">urlName:</label>
+    <input [(ngModel)]="nameUrlCat" name="nameUrlCat" type="text" class="form-control" id="urlName">
+  </div>
+  <button type="button" class="btn btn-success" (click)="addCategory()" *ngIf="!editStatus">Add</button>
+
+  <button type="button" class="btn btn-primary" (click)="saveCat()" *ngIf="editStatus">Save</button>
+</form>
+<hr class="mb-3 mt-3">
+<table style="text-align: center;" class="table align-middle">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">UrlName</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cat of adminCategories,index as i">
+      <td>{{i + 1}}</td>
+      <td>{{cat.name}}</td>
+      <td>{{cat.urlName}}</td>
+      <td>
+        <button class="btn btn-warning" (click)="editCat(cat)">Редагувати</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteCat(cat)" [class.disabled] = "editStatus">Видалити</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

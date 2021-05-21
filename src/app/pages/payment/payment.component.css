@@ -1,0 +1,226 @@
+header {
+  margin-top: 80px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-top: 185px;
+  font-size: 50px;
+  line-height: 54px;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+
+.container {
+  width: 1200px;
+  height: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.zones-payme {
+  font-family: 'Comfortaa', cursive;
+  width: 540px;
+}
+
+.zones-payme img {
+  width: 160px;
+  height: 160px;
+}
+
+.zones-payme h6 {
+  color: #309300;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.zones-payme p {
+  line-height: 28px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5c5c5c;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.zones-payme p span {
+  color: black;
+  font-weight: 700;
+}
+
+.top-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 140px;
+  position: relative;
+}
+
+.top-border::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.map-payme {
+  height: 520px;
+  width: 520px;
+}
+
+.city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.city input,
+.city select {
+  border: 1px lightgray solid;
+  outline: none;
+  padding-left: 10px;
+}
+
+.city .city-check {
+  width: 185px;
+  height: 50px;
+}
+
+.city .street {
+  width: 270px;
+  height: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.city .street::-webkit-input-placeholder {
+  color: black;
+}
+
+.city .street:-ms-input-placeholder {
+  color: black;
+}
+
+.city .street::-ms-input-placeholder {
+  color: black;
+}
+
+.city .street::placeholder {
+  color: black;
+}
+
+.city .build {
+  width: 85px;
+  height: 50px;
+}
+
+.city .build::-webkit-input-placeholder {
+  color: black;
+}
+
+.city .build:-ms-input-placeholder {
+  color: black;
+}
+
+.city .build::-ms-input-placeholder {
+  color: black;
+}
+
+.city .build::placeholder {
+  color: black;
+}
+
+.google-map {
+  margin-top: 30px;
+}
+
+.block-info-payment {
+  margin: 65px auto;
+  width: 870px;
+  position: relative;
+}
+
+.block-info-payment p {
+  margin-bottom: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.block-info-payment::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCSfNrv_lK2vgQS-6QXxpWnerWAN5IWb_u_w&usqp=CAU");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 46px;
+}
+
+.spos {
+  width: 380px;
+  height: 220px;
+  border: #cfcfcf solid 1px;
+  margin-right: 30px;
+  padding: 35px 30px 25px 30px;
+  text-align: center;
+}
+
+.right-block-spos {
+  margin-left: 30px;
+  position: relative;
+}
+
+.left-block-spos {
+  position: relative;
+}
+
+.left-block-spos::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-image: url("https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/money_1.svg");
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  top: -70px;
+  left: 110px;
+}
+
+.right-block-spos::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-image: url("https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/money_2.svg");
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  top: -70px;
+  left: 110px;
+}
+
+h6 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+}
+
+.spos-p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+}
+/*# sourceMappingURL=payment.component.css.map */

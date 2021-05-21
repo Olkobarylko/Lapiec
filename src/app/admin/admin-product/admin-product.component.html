@@ -1,0 +1,110 @@
+<div class="mb-3">
+  <select class="form-select mb-3" aria-label="Default select example" [(ngModel)]="selectCat" name="selectCat">
+    <option selected disabled>Open this select menu</option>
+    <option *ngFor="let cat of adminCategories" value="{{cat.urlName}}">{{cat.name}}</option>
+  </select>
+  <div class="mb-3">
+    <label for="name" class="form-label">Заголовок:</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="prodName" name="prodName">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">urlName:</label>
+    <input type="text" class="form-control" id="urlName" [(ngModel)]="urlName" name="urlName">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">Опис:</label>
+    <input type="text" class="form-control" id="urlName" [(ngModel)]="describe" name="describe">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">Ціна:</label>
+    <input type="text" class="form-control" id="urlName" [(ngModel)]="price" name="price">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">Вага:</label>
+    <input type="text" class="form-control" id="urlName" [(ngModel)]="weight" name="weight">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">Розмір*:</label>
+    <input type="text" class="form-control" id="urlName" [(ngModel)]="size" name="size">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">Протеїни*:</label>
+    <input type="text" class="form-control" id="urlName" [(ngModel)]="proteins" name="proteins">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">Вуглеводи*:</label>
+    <input type="text" class="form-control" id="urlName" [(ngModel)]="carbohydrates" name="carbohydrates">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">Жири*:</label>
+    <input type="text" class="form-control" id="urlName" [(ngModel)]="jury" name="jury">
+  </div>
+  <div class="mb-3">
+    <label for="urlName" class="form-label">Калорії*:</label>
+    <input type="text" class="form-control" id="urlName" [(ngModel)]="caloric" name="caloric">
+  </div>
+
+  <ng-container *ngIf="!imageStatus; else elseTemplate">
+    <div class="custom-file">
+      <input (change)="uploadFile($event)" type="file" class="custom-file-input" id="urlImage" required>
+      <label class="custom-file-label" for="urlImage">Choose file...</label>
+    </div>
+    <div class="progress mt-3 mb-3">
+      <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+        [style.width]="(uploadPercent | async) + '%'" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <div class="image mb-3">
+      <img [src]="image" alt="" width="300px">
+      <i class="bi bi-trash-fill ml-3" (click)="deleteImage()"></i>
+    </div>
+  </ng-template>
+  
+  <button type="button" class="btn btn-success" (click)="addProd()" *ngIf="!editStatus">Add</button>
+  <button type="button" class="btn btn-primary" (click)="saveProd()" *ngIf="editStatus">Save</button>
+</div>
+<table style="text-align: center;" class="table align-middle">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Category</th>
+      <th scope="col">Name</th>
+      <th scope="col">UrlName</th>
+      <th scope="col">Опис</th>
+      <th scope="col">Ціна</th>
+      <th scope="col">Вага</th>
+      <th scope="col">Image</th>
+      <th scope="col">Розмір</th>
+      <th scope="col">Протеїни</th>
+      <th scope="col">Вуглеводи</th>
+      <th scope="col">Жири</th>
+      <th scope="col">Калорії</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of adminProducts,index as i">
+      <td>{{i+ 1}}</td>
+      <td>{{p.category.urlName}}</td>
+      <td>{{p.title}}</td>
+      <td>{{p.urlName}}</td>
+      <td>{{p.describe}}</td>
+      <td>{{p.price}}</td>
+      <td>{{p.weight}}</td>
+      <td><img width="100px" alt="" src="{{p.image}}"></td>
+      <td>{{p.size}}</td>
+      <td>{{p.proteins}}</td>
+      <td>{{p.carbohydrates}}</td>
+      <td>{{p.jury}}</td>
+      <td>{{p.caloric}}</td>
+      <td>
+        <button class="btn btn-warning" (click)="editProd(p)">Редагувати</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteProd(p)" [class.disabled] = "editStatus">Видалити</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

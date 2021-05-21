@@ -1,0 +1,63 @@
+.container {
+  width: 950px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.block-promote {
+  width: 450px;
+  height: 665px;
+  text-align: center;
+}
+
+.block-promote img {
+  margin-bottom: 26px;
+  -webkit-transition: .35s all;
+  transition: .35s all;
+}
+
+.block-promote h5 {
+  font-size: 24px;
+  font-family: "Comfortaa", cursive;
+  margin-bottom: 50px;
+  -webkit-transition: .45s all;
+  transition: .45s all;
+}
+
+.block-promote a {
+  -webkit-transition: .45s all;
+  transition: .45s all;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 215px;
+  height: 46px;
+  border-radius: 22px;
+  background-color: #c80000;
+  border: 1px solid #c80000;
+  font-size: 15px;
+  font-family: "Comfortaa", cursive;
+  color: #fefefe;
+  text-align: center;
+  line-height: 45px;
+}
+
+.block-promote img:hover {
+  opacity: 0.8;
+}
+
+.block-promote h5:hover {
+  color: #dd0f0f;
+}
+
+.block-promote a:hover {
+  background-color: white;
+  color: #dd0f0f;
+}
+/*# sourceMappingURL=promotions.component.css.map */

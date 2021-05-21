@@ -1,0 +1,296 @@
+footer {
+  width: 100%;
+  background-image: url('https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/img/footer1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-info {
+  width: 380px;
+
+  img {
+    width: 190px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    transition: all .45s;
+  }
+
+  img:hover {
+    opacity: 0.9;
+  }
+
+  .logo-massengers {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 25px;
+
+    span {
+      display: block;
+    }
+
+    div {
+      height: 40px;
+      width: 40px;
+      background-position: center;
+      background-size: 27px 20px;
+      background-repeat: no-repeat;
+      background-color: white;
+      border-radius: 6px;
+      transition: all .45s;
+      background-size: 20px 20px;
+      background-position: center;
+    }
+
+    .facebook {
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/2111/2111393.svg?token=exp=1618480756~hmac=605d477ee6d6d97f69fd3e0f2092c765');
+    }
+
+    .facebook:hover {
+      background-color: #337ab7;
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/2111/2111392.svg?token=exp=1618480859~hmac=99fa024ae3ddd97d791fa9cc71e85748');
+    }
+
+    .insta {
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/2111/2111463.svg?token=exp=1618480885~hmac=920d0f99ed102918611b159cbc4e9b65');
+    }
+
+    .insta:hover {
+      background-color: rgb(201, 6, 104);
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/2111/2111491.svg?token=exp=1618480889~hmac=e6442eba9f211756c96946e6d697865a');
+    }
+
+    .envelope {
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/855/855502.svg?token=exp=1618480923~hmac=03932b949b621421aea359fffd6e73d1');
+    }
+
+    .envelope:hover {
+      background-color: rgb(247, 243, 10);
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/855/855553.svg?token=exp=1618480931~hmac=9e30b0b9f1fc1f5d6e1a26e7247d20b0');
+    }
+
+    .tiktoc {
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/3046/3046121.svg?token=exp=1618480954~hmac=9daa425420f3e1052a2a167832c25fd8');
+    }
+
+    .tiktoc:hover {
+      background-color: black;
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/3046/3046123.svg?token=exp=1618481021~hmac=6b3cef4e96bf8db52d8789f53d33e322');
+    }
+
+    .youtube {
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/1384/1384060.svg?token=exp=1618480979~hmac=9631a569004bc3196974313f5e8a696f');
+    }
+
+    .youtube:hover {
+      background-color: red;
+      background-image: url('https://www.flaticon.com/svg/vstatic/svg/1384/1384028.svg?token=exp=1618480982~hmac=5edf4d3f644b296ea06b87504924faa3');
+    }
+  }
+}
+
+.footer-categories {
+  display: flex;
+  width: 300px;
+
+  ul {
+    list-style-type: none;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+
+    li {
+      padding-top: 9px;
+      transition: all .45s;
+      outline: none;
+    }
+  }
+}
+
+.images-locations {
+  margin-left: 79px;
+  background-image: url('https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/placeholder.svg')
+}
+
+.footer-categories ul li:hover {
+  color: rgb(247, 194, 0);
+}
+
+.footer-location {
+  height: 260px;
+  width: 550px;
+  margin-left: 90px;
+
+  .icon-loc {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border: 1px solid white;
+  }
+
+  p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    margin-top: 12px;
+    text-align: center;
+    color: white;
+  }
+}
+
+.active-li {
+  color: rgb(247, 194, 0);
+}
+
+.phone-hover {
+  transition: all .45s;
+}
+
+.phone-hover:hover {
+  color: rgb(247, 194, 0);
+}
+
+.footer-location-footer {
+  text-align: center;
+
+  h6 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+}
+
+.footer-down-block {
+  margin-top: 25px;
+  height: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  width: 98%;
+  margin-left: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+
+  .right-blockdown {
+    width: 182px;
+
+    a {
+      display: flex;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.7);
+
+      img {
+        width: 75px;
+        height: 40px;
+      }
+
+      p {
+        margin-top: 10px;
+        margin-right: 5px;
+        position: relative;
+        transition: all .45s;
+      }
+    }
+  }
+}
+
+.right-blockdown a p::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  margin-right: 200px;
+  width: 0px;
+  height: 3px;
+  background-color: red;
+  transition: all .45s;
+  transition-property: width;
+  transition-duration: 0.7s;
+}
+
+.right-blockdown a p:hover::before {
+  content: "";
+  width: 100px;
+  transition: all .45s;
+}
+
+.footer-display {
+  display: flex;
+  padding-top: 70px;
+  width: 98%;
+  flex-wrap: wrap;
+}
+
+@media (max-width:1347px) {
+  .footer-location {
+    margin-bottom: 100px;
+  }
+
+  .footer-display {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+    width: 98%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:637px) {
+  .footer-location {
+    margin-bottom: 200px;
+  }
+
+  .footer-display {
+    justify-content: center;
+  }
+
+  .footer-location {
+    height: 260px;
+    width: 320px;
+    margin-left: 5px;
+
+    .icon-loc {
+      width: 60px;
+      height: 60px;
+      background-position: center;
+      background-size: 24px 24px;
+      background-repeat: no-repeat;
+      border-radius: 100%;
+      border: 1px solid white;
+    }
+
+    p {
+      font-family: 'Comfortaa', cursive;
+      font-size: 16px;
+      margin-top: 12px;
+      text-align: center;
+      color: white;
+    }
+    .images-locations {
+      margin-left: 0px;
+    }
+    .hide-block{
+      display: none;
+    }
+    .footer-down-block {
+      margin-top: 25px;
+      height: 180px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      width: 98%;
+      margin-left: 1%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      .right-blockdown {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<h3 class="header-component">Акції</h3>
+<div class="container">
+  <div *ngFor="let prom of promArray" class="block-promote">
+    <img
+      src="{{prom.image}}">
+    <h5>{{prom.title}}</h5>
+    <hr>
+    <a [routerLink]="[ '/promotions', prom.id ]" >СКОРИСТАТИСЯ</a>
+  </div>
+
+</div>

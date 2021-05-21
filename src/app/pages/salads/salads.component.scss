@@ -1,0 +1,564 @@
+.container-salads {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.block-salad {
+  width: 480px;
+  height: 870px;
+  text-align: center;
+  position: relative;
+  transition: all .45s;
+  transform: translateY(0);
+  z-index: 2;
+
+
+  span {
+    position: absolute;
+    line-height: 65px;
+    padding-right: 15px;
+    width: 480px;
+    height: 65px;
+    top: 450px;
+    left: 0px;
+    color: white;
+    text-align: right;
+    box-shadow: rgba(0, 0, 0, 0.93) 0px -65px 35px -45px inset;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+  }
+
+  .overflow {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-prod {
+    background-image: url('https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/TSezar-z-kurkoyu.png');
+    width: 480px;
+    height: 515px;
+    background-size: cover;
+    transition: all .3s linear;
+    overflow: hidden;
+  }
+
+  h5 {
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: 'Comfortaa', cursive;
+    height: 50px;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    // width: 480px;
+  }
+
+  h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .table-salads {
+    width: 480px;
+    height: 55px;
+    border: 1px solid rgb(204, 204, 204);
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  .block-info {
+    width: 128px;
+    height: 55px;
+    position: relative;
+
+    div,
+    h4 {
+      padding-top: 5px;
+      color: rgb(51, 51, 51);
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h4 {
+      font-weight: bold;
+    }
+  }
+
+  .block-info::before {
+    content: "";
+    left: 120px;
+    top: 6px;
+    position: absolute;
+    height: 43px;
+    width: 1px;
+    background-color: #ccc;
+  }
+}
+
+.order-prod {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  margin-left: 70px;
+
+  span {
+    position: relative;
+    padding-right: 15px;
+    width: 480px;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    text-align: right;
+    box-shadow: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 28px;
+    line-height: 36px;
+    color: #c80000;
+  }
+
+  i {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(51, 51, 51);
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    margin-left: -8px;
+  }
+}
+
+.prod-count {
+  img {
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  input {
+    width: 40px;
+    height: 40px;
+    margin: 0px 7px;
+    text-align: center;
+  }
+}
+
+
+.aLink {
+  transition: .45s all;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 107px;
+  height: 28px;
+  border-radius: 22px;
+  background-color: #c80000;
+  border: 1px solid #c80000;
+  font-size: 13px;
+  font-family: "Comfortaa", cursive;
+  color: #fefefe;
+  text-align: center;
+  line-height: 28px;
+}
+
+.aLink:hover {
+  background-color: white;
+  color: rgb(221, 15, 15);
+}
+
+.block-salad::before {
+  content: "";
+  width: 490px;
+  height: 830px;
+  position: absolute;
+  opacity: -1;
+  top: 0px;
+  left: -5px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 11px 6px;
+  transition: all .45s;
+  background-color: white;
+
+}
+
+.block-salad:hover::before {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: -1;
+}
+
+.block-salad:hover .image-prod {
+  margin-left: -30px;
+  transform: scale(1.5);
+  z-index: -1000;
+}
+
+@media (max-width: 1500px) {
+
+  .block-salad {
+    width: 370px;
+    height: 830px;
+
+    span {
+      width: 370px;
+      height: 65px;
+      top: 350px;
+    }
+
+    .image-prod {
+      width: 370px;
+      height: 415px;
+    }
+
+    p {
+      // width: 370px;
+      min-height: 80px;
+    }
+
+    .table-salads {
+      width: 370px;
+      height: 55px;
+      border: 1px solid rgb(204, 204, 204);
+      display: flex;
+      margin-bottom: 25px;
+    }
+
+    .block-info {
+      width: 93px;
+      height: 55px;
+      position: relative;
+
+      div,
+      h4 {
+        padding-top: 5px;
+        color: rgb(51, 51, 51);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h4 {
+        font-weight: bold;
+      }
+    }
+
+    .block-info::before {
+      content: "";
+      left: 92px;
+      top: 6px;
+      position: absolute;
+      height: 43px;
+      width: 1px;
+      background-color: #ccc;
+    }
+
+  }
+
+  .prod-price {
+    a {
+      margin-left: 65%;
+    }
+  }
+
+  .order-prod {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 250px;
+    margin-left: 65px;
+
+    span {
+      position: relative;
+      padding-right: 15px;
+      width: 370px;
+      height: 65px;
+      top: 0px;
+      left: 0px;
+      text-align: right;
+      box-shadow: none;
+      font-family: 'Comfortaa', cursive;
+      font-size: 28px;
+      line-height: 36px;
+      color: #c80000;
+    }
+
+  }
+
+  .block-salad::before {
+    content: "";
+    top: 15px;
+    width: 380px;
+    height: 780px;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+
+  .block-salad {
+    width: 345px;
+    height: 830px;
+    margin-left: 11px;
+    margin-right: 11px;
+
+    span {
+      width: 100%;
+      top: 350px;
+    }
+
+    .image-prod {
+      width: 370px;
+      height: 415px;
+    }
+
+    p {
+      width: 370px;
+      min-height: 20px;
+    }
+
+    .table-salads {
+      width: 345px;
+      height: 55px;
+      border: 1px solid rgb(204, 204, 204);
+      display: flex;
+      margin-bottom: 25px;
+    }
+
+    .block-info {
+      width: 86px;
+      height: 55px;
+      position: relative;
+
+      div,
+      h4 {
+        padding-top: 5px;
+        color: rgb(51, 51, 51);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h4 {
+        font-weight: bold;
+      }
+    }
+
+    .block-info::before {
+      content: "";
+      left: 86px;
+      top: 6px;
+      position: absolute;
+      height: 43px;
+      width: 1px;
+      background-color: #ccc;
+    }
+
+  }
+
+  .prod-price {
+    a {
+      margin-left: 65%;
+    }
+  }
+
+  .order-prod {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 250px;
+    margin-left: 65px;
+
+    span {
+      position: relative;
+      padding-right: 15px;
+      width: 370px;
+      height: 65px;
+      top: 0px;
+      left: 0px;
+      text-align: right;
+      box-shadow: none;
+      font-family: 'Comfortaa', cursive;
+      font-size: 28px;
+      line-height: 36px;
+      color: #c80000;
+    }
+
+  }
+
+  .block-salad::before {
+    content: "";
+    top: 15px;
+    width: 355px;
+    height: 765px;
+  }
+}
+
+@media (max-width: 785px) {
+  
+
+  .container-salads {
+    width: 100%;
+  }
+
+  .fast-placed {
+    display: none;
+  }
+
+  .block-salad {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+    position: relative;
+    transition: all .45s;
+    transform: translateY(0);
+    z-index: 2;
+    margin-bottom: 70px;
+
+    span {
+      position: absolute;
+      line-height: 65px;
+      padding-top: 20px;
+      padding-right: 10px;
+      width: 130px;
+      height: 65px;
+      top: 65px;
+      left: 0px;
+      color: white;
+      text-align: right;
+      box-shadow: rgba(0, 0, 0, 0.93) 0px -65px 35px -45px inset;
+      font-family: 'Comfortaa', cursive;
+      font-size: 16px;
+    }
+    p{
+      width: 100%;
+      min-height: 15px;
+      text-overflow: ellipsis;
+      white-space: wrap;
+      overflow: hidden;
+    }
+    h6{
+      display: none;
+    }
+
+    .table-salads {
+      display: none;
+    }
+    .order-prod {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 15px;
+      width: 100%;
+
+      span {
+        display: block;
+        position: relative;
+        padding-right: 15px;
+        width: 100%;
+        height: 65px;
+        top: -15px;
+        left: 0px;
+        text-align: right;
+        box-shadow: none;
+        font-family: 'Comfortaa', cursive;
+        font-size: 28px;
+        line-height: 36px;
+        color: #c80000;
+      }
+
+      i {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 12px;
+        margin-right: 15px;
+        color: rgb(51, 51, 51);
+        font-family: 'Comfortaa', cursive;
+        font-style: normal;
+        margin-left: -8px;
+      }
+
+    }
+
+    .prod-price {
+      display: flex;
+
+      a {
+        margin-left: 15px;
+      }
+    }
+
+    .overflow {
+      position: relative;
+      overflow: visible;
+    }
+
+    .image-prod {
+      width: 130px;
+      height: 130px;
+      background-size: cover;
+      transition: all .3s linear;
+      overflow: hidden;
+    }
+
+    h5 {
+      text-align: left;
+      font-size: 18px;
+      font-family: 'Comfortaa', cursive;
+      height: 30px;
+      margin-top: 0px;
+      margin-left: 15px;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 16px;
+      min-height: 16px;
+      text-align: left;
+      margin-left: 15px;
+      margin-bottom: 10px;
+      text-overflow: ellipsis;
+    }
+
+  }
+
+  .block-salad::before {
+    content: none;
+    width: 355px;
+    height: 630px;
+  }
+
+  .buble {
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    text-align: center;
+    transition-property: margin-top;
+    transition: all .3s linear;
+    opacity: 0;
+
+    p {
+      font-family: "Comfortaa", cursive;
+      transition: all .3s linear;
+    }
+  }
+
+  .block-salad:hover .image-prod {
+    margin-left: 0px;
+    transform: none;
+  }
+
+  hr {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+}

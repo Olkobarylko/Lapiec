@@ -1,0 +1,57 @@
+<div class="fast-placed">
+  <div class="moto">
+    <img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/scooter_1.svg">
+  </div>
+  <div class="info-fast">
+    <div class="btn-zones"><a [routerLink]="[ '/payment']" class="button btnColor2">ЗОНИ
+        ДОСТАВКИ</a></div>
+    <div class="time-zones">
+      <span class="timeCounter">00:28:40</span>
+      <p>Середній час доставки в зеленій зоні</p>
+    </div>
+    <div class="shedule-zones">
+      <p>Графік роботи</p>
+      <span>цілодобово</span>
+    </div>
+  </div>
+  <div class="photos-fast">
+    <img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/delivery-pizza.svg" alt="">
+  </div>
+</div>
+<h3 class="header-component">Піца</h3>
+<div style="margin:0 auto;">
+  <div class="container-salads">
+    <div *ngFor="let prod of productArray" class="block-salad">
+      <div class="overflow">
+        <div alt="" [routerLink]="[ '/pizza', prod.id ]" [ngStyle]="{'background-image': 'url(' + prod.image + ')'}"
+          class="image-prod"></div>
+      </div>
+      <div>
+        <span>{{prod.weight}} гр</span>
+        <h5 alt="" [routerLink]="[ '/pizza', prod.id ]">{{prod.title}}</h5>
+        <p>{{prod.describe}}</p>
+        <hr>
+        <div class="order-prod">
+          <div class="prod-price">
+            <span>{{prod.price * prod.count}}</span>
+            <i>грн</i>
+          </div>
+          <div class="prod-count">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fpromotions%2Fredminus.png?alt=media&token=a0bfc7a0-26d2-4ae2-adf1-193b197792b4"
+              alt="" (click)="changeProductCount(prod,false)">
+            <input type="text" [value]="prod.count">
+            <img src="https://www.pngkey.com/png/full/6-60004_plus-sign-images-clipart-best-2hluoq-clipart-red.png"
+              alt="" (click)="changeProductCount(prod,true)">
+          </div>
+          <div class="prod-price">
+            <a (click)="addToBusket(prod)">Замовити</a>
+          </div>
+        </div>
+        <div style="text-align: center;" class="buble">
+          <p style="text-align: center;" alt="" [routerLink]="[ '/pizza', prod.id ]">Додати складники</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

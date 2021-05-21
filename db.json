@@ -1,0 +1,800 @@
+{
+  "promotions": [
+    {
+      "id": 1,
+      "title": "Наша фірмова акція “2+1”",
+      "layout": "Акція «2+1» діє в понеділок, вівторок, середу та четвер. Замовляйте дві піци та отримуйте ще одну безкоштовно!",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fpromotions%2Faktsiya1.jpg?alt=media&token=50d36f45-ac2d-4282-adae-d855cdbdb35a",
+      "isVisible": true
+    },
+    {
+      "title": "Приведи друга",
+      "layout": "Отримайте 100 грн за… дружню пораду!\nЯкщо ваш друг, зробить у нас замовлення завдяки вашим рекомендаціям, то ви обоє гарантовано отримаєте по 100 грн.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fpromotions%2Faksia2.jpg?alt=media&token=1ee098b9-38df-452e-bc29-b2cd372c581d",
+      "isVisible": true,
+      "id": 2
+    },
+    {
+      "title": "Самовивіз",
+      "layout": "Забирайте своє замовлення самостійно та отримуйте суттєві переваги: – гарячу, щойно спечену в печі улюблену піцу; – знижку 20%",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fpromotions%2Fsamovyviz.jpg?alt=media&token=e765b5e2-0563-469d-be63-36c583f059b5",
+      "isVisible": true,
+      "id": 3
+    }
+  ],
+  "category": [
+    {
+      "name": "Піца",
+      "urlName": "pizza",
+      "id": 1
+    },
+    {
+      "name": "Салати",
+      "urlName": "salads",
+      "id": 2
+    },
+    {
+      "name": "Десерти",
+      "urlName": "desserts",
+      "id": 3
+    },
+    {
+      "name": "Напої",
+      "urlName": "drinks",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "title": "Гавайська",
+      "describe": "сир моцарела, соус вершковий, філе куряче, кукурудза, ананас, оливки, перець болгарський.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fgavajska.png?alt=media&token=41a409ca-891c-4769-914e-cb3c52c9d2ef",
+      "price": "155",
+      "category": {
+        "urlName": "pizza"
+      },
+      "weight": "535",
+      "size": "35",
+      "proteins": "123",
+      "carbohydrates": "21",
+      "jury": "32",
+      "caloric": "12",
+      "urlName": "pizza",
+      "count": 1,
+      "id": 1
+    },
+    {
+      "title": "Пончетта",
+      "describe": "сир моцарела, соус кисло-солодкий, грудинка свинна, перець болгарський, огірок корнішон.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpanchetta.png?alt=media&token=0cfd9e4a-6278-4723-b532-7a0bb290bf70",
+      "price": "153",
+      "category": {
+        "urlName": "pizza"
+      },
+      "weight": "440",
+      "size": "30",
+      "proteins": "12",
+      "carbohydrates": "21",
+      "jury": "12",
+      "caloric": "21",
+      "urlName": "pizza",
+      "id": 2,
+      "count": 1
+    },
+    {
+      "title": "Папероні",
+      "describe": "сир моцарела, соус барбекю, пепероні, пармезан, рукола.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpaperoni.png?alt=media&token=e90e02be-68aa-43fd-a0a0-09f547e8b2b1",
+      "price": "160",
+      "category": {
+        "urlName": "pizza"
+      },
+      "weight": "400",
+      "size": "30",
+      "proteins": "12",
+      "carbohydrates": "12",
+      "jury": "32",
+      "caloric": "12",
+      "urlName": "pizza",
+      "id": 3,
+      "count": 1
+    },
+    {
+      "title": "dsfds",
+      "describe": "sdfsdfsdfsdfds",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fgavajska.png?alt=media&token=130c7c9f-8abc-46c3-8762-46ef3eaee4af",
+      "price": "215",
+      "category": {
+        "urlName": "pizza"
+      },
+      "weight": "ds",
+      "size": "213",
+      "proteins": "12",
+      "carbohydrates": "12",
+      "jury": "12",
+      "caloric": "12",
+      "urlName": "dsffsd",
+      "id": 4,
+      "count": 1
+    },
+    {
+      "title": "sad",
+      "describe": "asdas",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fgavajska.png?alt=media&token=12c70503-2216-4139-9f8d-375d5a303c5c",
+      "price": "123",
+      "category": {
+        "urlName": "pizza"
+      },
+      "weight": "sad",
+      "size": "sd",
+      "proteins": "as",
+      "carbohydrates": "sd",
+      "jury": "asd",
+      "caloric": "asd",
+      "urlName": "asdas",
+      "id": 5,
+      "count": 1
+    },
+    {
+      "title": "Салат Цезар",
+      "describe": "Салат айсберг, помідори, куряче м`ясо, сир пармезан, перепелині яйця, духмяні сухарики та фірмова заправка - соус «Цезар».",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FTSezar.png?alt=media&token=7125d668-6370-41b9-aeb6-4ed399faade8",
+      "price": "135",
+      "category": {
+        "urlName": "salads"
+      },
+      "weight": "250",
+      "proteins": "11.8",
+      "carbohydrates": "9.8",
+      "jury": "22.5",
+      "caloric": "291",
+      "urlName": "salads",
+      "count": 1,
+      "id": 6
+    },
+    {
+      "title": "Інсалата ді Сальмоне",
+      "describe": "рукола, помідор чері, огірок, салат айсберг, соус айолі, пармезан, лосось, перепелине яйце, кунжут.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FInsalata.png?alt=media&token=e5b21912-b06c-4178-88c0-6aa0bf8bc532",
+      "price": "144",
+      "category": {
+        "urlName": "salads"
+      },
+      "weight": "285",
+      "proteins": "6.9",
+      "carbohydrates": "3.5",
+      "jury": "12.6",
+      "caloric": "156",
+      "urlName": "salads",
+      "count": 1,
+      "id": 7
+    },
+    {
+      "title": "Прімавера",
+      "describe": "сир моцарела, салат айсберг, помідор чері, огірок, болгарський перець, оливкова олія, фреш лимонний, орегано.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FPrimavera.png?alt=media&token=6792b1cb-fa9e-4e50-b0d4-cf911e2820e5",
+      "price": "109",
+      "category": {
+        "urlName": "salads"
+      },
+      "weight": "255",
+      "proteins": "6.5",
+      "carbohydrates": "4.5",
+      "jury": "10.6",
+      "caloric": "142",
+      "urlName": "salads",
+      "count": 1,
+      "id": 8
+    },
+    {
+      "title": "Сирники",
+      "describe": "сирники, карамельний соус, сметана",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FSyrnyky.png?alt=media&token=9b8dc7ff-6ff1-4053-8ebb-ce792d8e0257",
+      "price": "75",
+      "category": {
+        "urlName": "desserts"
+      },
+      "weight": "240",
+      "proteins": "15.3",
+      "carbohydrates": "13.6",
+      "jury": "14.3",
+      "caloric": "247",
+      "urlName": "desserts",
+      "count": 1,
+      "id": 9
+    },
+    {
+      "title": "Сирна запіканка",
+      "describe": "сирна запіканка, ванільний соус, карамельний соус",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FSyrna-zapikanka.png?alt=media&token=d4a61dd1-923f-4965-b338-f87abe2ddc0e",
+      "price": "82",
+      "category": {
+        "urlName": "desserts"
+      },
+      "weight": "240",
+      "proteins": "8.2",
+      "carbohydrates": "15.5",
+      "jury": "9.9",
+      "caloric": "186",
+      "urlName": "desserts",
+      "count": 1,
+      "id": 10
+    },
+    {
+      "title": "Андрути",
+      "describe": "вафлі, згущене молоко, горіхи",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FAndruty.png?alt=media&token=df173682-e2aa-456c-ab76-854d9b8a7aa4",
+      "price": "65",
+      "category": {
+        "urlName": "desserts"
+      },
+      "weight": "100",
+      "proteins": "6.1",
+      "carbohydrates": "43.2",
+      "jury": "9.4",
+      "caloric": "283",
+      "urlName": "desserts",
+      "count": 1,
+      "id": 11
+    },
+    {
+      "title": "Coca Cola — 0,5 л",
+      "describe": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fcola0.5.jpg?alt=media&token=eb2cecbd-5370-4b3c-82c3-56a282c591c2",
+      "price": "24",
+      "category": {
+        "urlName": "drinks"
+      },
+      "weight": "1",
+      "urlName": "drinks",
+      "count": 1,
+      "id": 12
+    },
+    {
+      "title": "Coca Cola — 1 л",
+      "describe": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fcola1.jpg?alt=media&token=61d7d42e-803a-4d05-9543-9c514c77e038",
+      "price": "33",
+      "category": {
+        "urlName": "drinks"
+      },
+      "weight": "1",
+      "urlName": "drinks",
+      "count": 1,
+      "id": 13
+    },
+    {
+      "title": "Fanta — 0.5 л",
+      "describe": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Ffanta-05l.jpg?alt=media&token=8b7f076e-32a1-4346-ab9a-276bf789a785",
+      "price": "24",
+      "category": {
+        "urlName": "drinks"
+      },
+      "weight": "1",
+      "urlName": "drinks",
+      "count": 1,
+      "id": 14
+    },
+    {
+      "title": "Fanta — 1 л",
+      "describe": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Ffanta-1l.jpg?alt=media&token=031d9a5a-4a29-489c-b8a7-894e6c06df42",
+      "price": "33",
+      "category": {
+        "urlName": "drinks"
+      },
+      "weight": "1",
+      "size": null,
+      "proteins": null,
+      "carbohydrates": null,
+      "jury": null,
+      "caloric": null,
+      "urlName": "drinks",
+      "count": 1,
+      "id": 15
+    },
+    {
+      "title": "Цезаріо",
+      "describe": "сир моцарела, соус барбекю, пепероні, пармезан, рукола.",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FTSezario.png?alt=media&token=d40602ac-0f4f-4b51-aa0e-9511b440652b",
+      "price": "123",
+      "category": {
+        "urlName": "pizza"
+      },
+      "weight": "123",
+      "size": "12",
+      "proteins": "23",
+      "carbohydrates": "23",
+      "jury": "12",
+      "caloric": "12",
+      "urlName": "pizza",
+      "count": 1,
+      "id": 17
+    }
+  ],
+  "orders": [
+    {
+      "basket": [
+        {
+          "title": "Пончетта",
+          "describe": "сир моцарела, соус кисло-солодкий, грудинка свинна, перець болгарський, огірок корнішон.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpanchetta.png?alt=media&token=0cfd9e4a-6278-4723-b532-7a0bb290bf70",
+          "price": "153",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "440",
+          "size": "30",
+          "proteins": "12",
+          "carbohydrates": "21",
+          "jury": "12",
+          "caloric": "21",
+          "urlName": "pizza",
+          "id": 2,
+          "count": 1
+        },
+        {
+          "title": "Папероні",
+          "describe": "сир моцарела, соус барбекю, пепероні, пармезан, рукола.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpaperoni.png?alt=media&token=e90e02be-68aa-43fd-a0a0-09f547e8b2b1",
+          "price": "160",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "400",
+          "size": "30",
+          "proteins": "12",
+          "carbohydrates": "12",
+          "jury": "32",
+          "caloric": "12",
+          "urlName": "pizza",
+          "id": 3,
+          "count": 1
+        },
+        {
+          "title": "Інсалата ді Сальмоне",
+          "describe": "рукола, помідор чері, огірок, салат айсберг, соус айолі, пармезан, лосось, перепелине яйце, кунжут.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FInsalata.png?alt=media&token=e5b21912-b06c-4178-88c0-6aa0bf8bc532",
+          "price": "144",
+          "category": {
+            "urlName": "salads"
+          },
+          "weight": "285",
+          "proteins": "6.9",
+          "carbohydrates": "3.5",
+          "jury": "12.6",
+          "caloric": "156",
+          "urlName": "salads",
+          "count": 1,
+          "id": 7
+        },
+        {
+          "title": "Coca Cola — 1 л",
+          "describe": "1",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fcola1.jpg?alt=media&token=61d7d42e-803a-4d05-9543-9c514c77e038",
+          "price": "33",
+          "category": {
+            "urlName": "drinks"
+          },
+          "weight": "1",
+          "urlName": "drinks",
+          "count": 2,
+          "id": 13
+        }
+      ],
+      "street": "Митна",
+      "firstName": "Олег",
+      "phone": "+380980388883",
+      "date": "06.05.2021",
+      "time": "12 pm",
+      "comment": "Дивний Будинок",
+      "city": "Львів",
+      "home": "5",
+      "totalPrice": 523,
+      "id": 1
+    },
+    {
+      "basket": [
+        {
+          "title": "Гавайська",
+          "describe": "сир моцарела, соус вершковий, філе куряче, кукурудза, ананас, оливки, перець болгарський.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fgavajska.png?alt=media&token=41a409ca-891c-4769-914e-cb3c52c9d2ef",
+          "price": "155",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "535",
+          "size": "35",
+          "proteins": "123",
+          "carbohydrates": "21",
+          "jury": "32",
+          "caloric": "12",
+          "urlName": "pizza",
+          "id": 1,
+          "count": 1
+        },
+        {
+          "title": "Пончетта",
+          "describe": "сир моцарела, соус кисло-солодкий, грудинка свинна, перець болгарський, огірок корнішон.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpanchetta.png?alt=media&token=0cfd9e4a-6278-4723-b532-7a0bb290bf70",
+          "price": "153",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "440",
+          "size": "30",
+          "proteins": "12",
+          "carbohydrates": "21",
+          "jury": "12",
+          "caloric": "21",
+          "urlName": "pizza",
+          "id": 2,
+          "count": 1
+        },
+        {
+          "title": "Папероні",
+          "describe": "сир моцарела, соус барбекю, пепероні, пармезан, рукола.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpaperoni.png?alt=media&token=e90e02be-68aa-43fd-a0a0-09f547e8b2b1",
+          "price": "160",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "400",
+          "size": "30",
+          "proteins": "12",
+          "carbohydrates": "12",
+          "jury": "32",
+          "caloric": "12",
+          "urlName": "pizza",
+          "id": 3,
+          "count": 1
+        },
+        {
+          "title": "Fanta — 0.5 л",
+          "describe": "1",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Ffanta-05l.jpg?alt=media&token=8b7f076e-32a1-4346-ab9a-276bf789a785",
+          "price": "24",
+          "category": {
+            "urlName": "drinks"
+          },
+          "weight": "1",
+          "urlName": "drinks",
+          "count": 1,
+          "id": 14
+        }
+      ],
+      "street": "Зелена",
+      "firstName": "Ярик",
+      "phone": "+380980388882",
+      "date": "05.05.2020",
+      "time": "24 am",
+      "comment": "Странний будинок",
+      "city": "Львів",
+      "home": "43а",
+      "totalPrice": 492,
+      "id": 2
+    },
+    {
+      "basket": [
+        {
+          "title": "Папероні",
+          "describe": "сир моцарела, соус барбекю, пепероні, пармезан, рукола.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpaperoni.png?alt=media&token=e90e02be-68aa-43fd-a0a0-09f547e8b2b1",
+          "price": "160",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "400",
+          "size": "30",
+          "proteins": "12",
+          "carbohydrates": "12",
+          "jury": "32",
+          "caloric": "12",
+          "urlName": "pizza",
+          "id": 3,
+          "count": 2
+        },
+        {
+          "title": "Сирна запіканка",
+          "describe": "сирна запіканка, ванільний соус, карамельний соус",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FSyrna-zapikanka.png?alt=media&token=d4a61dd1-923f-4965-b338-f87abe2ddc0e",
+          "price": "82",
+          "category": {
+            "urlName": "desserts"
+          },
+          "weight": "240",
+          "proteins": "8.2",
+          "carbohydrates": "15.5",
+          "jury": "9.9",
+          "caloric": "186",
+          "urlName": "desserts",
+          "count": 3,
+          "id": 10
+        },
+        {
+          "title": "Андрути",
+          "describe": "вафлі, згущене молоко, горіхи",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FAndruty.png?alt=media&token=df173682-e2aa-456c-ab76-854d9b8a7aa4",
+          "price": "65",
+          "category": {
+            "urlName": "desserts"
+          },
+          "weight": "100",
+          "proteins": "6.1",
+          "carbohydrates": "43.2",
+          "jury": "9.4",
+          "caloric": "283",
+          "urlName": "desserts",
+          "count": 4,
+          "id": 11
+        },
+        {
+          "title": "Fanta — 0.5 л",
+          "describe": "1",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Ffanta-05l.jpg?alt=media&token=8b7f076e-32a1-4346-ab9a-276bf789a785",
+          "price": "24",
+          "category": {
+            "urlName": "drinks"
+          },
+          "weight": "1",
+          "urlName": "drinks",
+          "count": 3,
+          "id": 14
+        }
+      ],
+      "street": "Тракт",
+      "firstName": "Остап",
+      "phone": "+380980388881",
+      "date": "06.05.2021",
+      "time": "12 pm",
+      "comment": "---",
+      "city": "Львів",
+      "home": "123в",
+      "totalPrice": 898,
+      "id": 3
+    },
+    {
+      "basket": [
+        {
+          "title": "Гавайська",
+          "describe": "сир моцарела, соус вершковий, філе куряче, кукурудза, ананас, оливки, перець болгарський.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fgavajska.png?alt=media&token=41a409ca-891c-4769-914e-cb3c52c9d2ef",
+          "price": "155",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "535",
+          "size": "35",
+          "proteins": "123",
+          "carbohydrates": "21",
+          "jury": "32",
+          "caloric": "12",
+          "urlName": "pizza",
+          "id": 1,
+          "count": 2
+        },
+        {
+          "title": "Інсалата ді Сальмоне",
+          "describe": "рукола, помідор чері, огірок, салат айсберг, соус айолі, пармезан, лосось, перепелине яйце, кунжут.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FInsalata.png?alt=media&token=e5b21912-b06c-4178-88c0-6aa0bf8bc532",
+          "price": "144",
+          "category": {
+            "urlName": "salads"
+          },
+          "weight": "285",
+          "proteins": "6.9",
+          "carbohydrates": "3.5",
+          "jury": "12.6",
+          "caloric": "156",
+          "urlName": "salads",
+          "count": 4,
+          "id": 7
+        },
+        {
+          "title": "Сирна запіканка",
+          "describe": "сирна запіканка, ванільний соус, карамельний соус",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FSyrna-zapikanka.png?alt=media&token=d4a61dd1-923f-4965-b338-f87abe2ddc0e",
+          "price": "82",
+          "category": {
+            "urlName": "desserts"
+          },
+          "weight": "240",
+          "proteins": "8.2",
+          "carbohydrates": "15.5",
+          "jury": "9.9",
+          "caloric": "186",
+          "urlName": "desserts",
+          "count": 2,
+          "id": 10
+        },
+        {
+          "title": "Fanta — 1 л",
+          "describe": "1",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Ffanta-1l.jpg?alt=media&token=031d9a5a-4a29-489c-b8a7-894e6c06df42",
+          "price": "33",
+          "category": {
+            "urlName": "drinks"
+          },
+          "weight": "1",
+          "size": null,
+          "proteins": null,
+          "carbohydrates": null,
+          "jury": null,
+          "caloric": null,
+          "urlName": "drinks",
+          "count": 5,
+          "id": 15
+        }
+      ],
+      "street": "Зелена",
+      "firstName": "Анрій",
+      "phone": "+380980388880",
+      "date": "06.05.2021",
+      "time": "12 pm",
+      "comment": "Обережно Собаки",
+      "city": "Львів",
+      "home": "12",
+      "totalPrice": 1215,
+      "id": 4
+    },
+    {
+      "basket": [
+        {
+          "title": "Пончетта",
+          "describe": "сир моцарела, соус кисло-солодкий, грудинка свинна, перець болгарський, огірок корнішон.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpanchetta.png?alt=media&token=0cfd9e4a-6278-4723-b532-7a0bb290bf70",
+          "price": "153",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "440",
+          "size": "30",
+          "proteins": "12",
+          "carbohydrates": "21",
+          "jury": "12",
+          "caloric": "21",
+          "urlName": "pizza",
+          "id": 2,
+          "count": 1
+        },
+        {
+          "title": "Гавайська",
+          "describe": "сир моцарела, соус вершковий, філе куряче, кукурудза, ананас, оливки, перець болгарський.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fgavajska.png?alt=media&token=41a409ca-891c-4769-914e-cb3c52c9d2ef",
+          "price": "155",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "535",
+          "size": "35",
+          "proteins": "123",
+          "carbohydrates": "21",
+          "jury": "32",
+          "caloric": "12",
+          "urlName": "pizza",
+          "id": 1,
+          "count": 1
+        },
+        {
+          "title": "Інсалата ді Сальмоне",
+          "describe": "рукола, помідор чері, огірок, салат айсберг, соус айолі, пармезан, лосось, перепелине яйце, кунжут.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2FInsalata.png?alt=media&token=e5b21912-b06c-4178-88c0-6aa0bf8bc532",
+          "price": "144",
+          "category": {
+            "urlName": "salads"
+          },
+          "weight": "285",
+          "proteins": "6.9",
+          "carbohydrates": "3.5",
+          "jury": "12.6",
+          "caloric": "156",
+          "urlName": "salads",
+          "count": 1,
+          "id": 7
+        },
+        {
+          "title": "Fanta — 0.5 л",
+          "describe": "1",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Ffanta-05l.jpg?alt=media&token=8b7f076e-32a1-4346-ab9a-276bf789a785",
+          "price": "24",
+          "category": {
+            "urlName": "drinks"
+          },
+          "weight": "1",
+          "urlName": "drinks",
+          "count": 2,
+          "id": 14
+        }
+      ],
+      "street": "Митна",
+      "firstName": "Олег",
+      "phone": "+3809619525",
+      "date": "11.05.2021",
+      "time": "12pm",
+      "comment": "Великий жовтий будинок",
+      "city": "Львів",
+      "home": "21",
+      "totalPrice": 500,
+      "id": 5
+    },
+    {
+      "basket": [
+        {
+          "title": "Пончетта",
+          "describe": "сир моцарела, соус кисло-солодкий, грудинка свинна, перець болгарський, огірок корнішон.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpanchetta.png?alt=media&token=0cfd9e4a-6278-4723-b532-7a0bb290bf70",
+          "price": "153",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "440",
+          "size": "30",
+          "proteins": "12",
+          "carbohydrates": "21",
+          "jury": "12",
+          "caloric": "21",
+          "urlName": "pizza",
+          "id": 2,
+          "count": 1
+        },
+        {
+          "title": "Папероні",
+          "describe": "сир моцарела, соус барбекю, пепероні, пармезан, рукола.",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Fpaperoni.png?alt=media&token=e90e02be-68aa-43fd-a0a0-09f547e8b2b1",
+          "price": "160",
+          "category": {
+            "urlName": "pizza"
+          },
+          "weight": "400",
+          "size": "30",
+          "proteins": "12",
+          "carbohydrates": "12",
+          "jury": "32",
+          "caloric": "12",
+          "urlName": "pizza",
+          "id": 3,
+          "count": 1
+        },
+        {
+          "title": "Fanta — 0.5 л",
+          "describe": "1",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Ffanta-05l.jpg?alt=media&token=8b7f076e-32a1-4346-ab9a-276bf789a785",
+          "price": "24",
+          "category": {
+            "urlName": "drinks"
+          },
+          "weight": "1",
+          "urlName": "drinks",
+          "count": 1,
+          "id": 14
+        },
+        {
+          "title": "Fanta — 1 л",
+          "describe": "1",
+          "image": "https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fproducts%2Ffanta-1l.jpg?alt=media&token=031d9a5a-4a29-489c-b8a7-894e6c06df42",
+          "price": "33",
+          "category": {
+            "urlName": "drinks"
+          },
+          "weight": "1",
+          "size": null,
+          "proteins": null,
+          "carbohydrates": null,
+          "jury": null,
+          "caloric": null,
+          "urlName": "drinks",
+          "count": 1,
+          "id": 15
+        }
+      ],
+      "street": "цваі",
+      "firstName": "Олег",
+      "phone": "+380969619524",
+      "city": "Брюховичі",
+      "home": "32",
+      "totalPrice": 370,
+      "id": 6
+    }
+  ]
+}

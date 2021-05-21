@@ -1,0 +1,32 @@
+<div *ngIf="!checkLogin">
+  <header>
+    <h3 class="header-component">Увійти</h3>
+  </header>
+  <section>
+    <div class="main-block">
+      <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+        <h5>Персональні дані</h5>
+        <input formControlName='email'  type="text" placeholder="Логін">
+        <input formControlName='password' type="password" placeholder="Пароль">
+        <p class="sing-up" (click)="checkUser(true)">Хочу зареєструватися!</p>
+        <button type="submit">Увійти</button>
+      </form>
+    </div>
+  </section>
+</div>
+<div *ngIf="checkLogin">
+  <header>
+    <h3 class="header-component">Реєстрація</h3>
+  </header>
+  <section>
+    <div class="main-block">
+      <form [formGroup]="registerForm" (ngSubmit)="submitRegister()">
+        <h5>Персональні дані</h5>
+        <input formControlName='email' type="text" placeholder="Login">
+        <input formControlName='password' type="text" placeholder="Password">
+        <p class="sing-up" (click)="checkUser(false)">Хочу Увійти!</p>
+        <button type="submit">Зареєструватися</button>
+      </form>
+    </div>
+  </section>
+</div>

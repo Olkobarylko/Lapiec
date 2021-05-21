@@ -1,0 +1,420 @@
+section {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .content {
+  width: 1245px;
+  height: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.heding-route {
+  margin-top: 115px;
+  margin-left: 140px;
+  position: relative;
+}
+
+.heding-route span {
+  font-family: Arial;
+  font-size: 15px;
+}
+
+.heding-route::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 8px;
+  left: -13px;
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/860/860790.svg?token=exp=1618491090~hmac=c7102cd4dc34b3db1bfe0a085309e1d7");
+  background-size: cover;
+}
+
+.span-head {
+  -webkit-transition: all 0.65s;
+  transition: all 0.65s;
+}
+
+.span-head:hover {
+  color: #c80000;
+}
+
+.span-pizza {
+  -webkit-transition: all 0.65s;
+  transition: all 0.65s;
+}
+
+.span-pizza:hover {
+  color: #c80000;
+}
+
+.image {
+  width: 520px;
+  height: 520px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info {
+  width: 645px;
+  height: 520px;
+}
+
+.info h1 {
+  margin-top: 30px;
+  font-size: 42px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.info p {
+  font-size: 14px;
+}
+
+.table {
+  width: 645px;
+  height: 44px;
+  border: 1px solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.block-info {
+  width: 178px;
+  height: 44px;
+  position: relative;
+}
+
+.block-info div,
+.block-info h4 {
+  text-align: center;
+  padding-top: 1px;
+  color: #333333;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.block-info h4 {
+  font-weight: bold;
+  font-weight: bold;
+}
+
+.block-info::before {
+  content: "";
+  position: absolute;
+  left: 161px;
+  top: 0px;
+  height: 38px;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.size-vs-weight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 346px;
+  margin-bottom: 30px;
+}
+
+.size-vs-weight .size {
+  width: 136px;
+  height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.size-vs-weight .size img {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+}
+
+.size-vs-weight .size p {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 3px;
+  padding-bottom: 20px;
+}
+
+.size-vs-weight .size span {
+  font-size: 17px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.size-vs-weight .weigth {
+  width: 136px;
+  height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.size-vs-weight .weigth img {
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.size-vs-weight .weigth p {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 3px;
+  padding-bottom: 20px;
+}
+
+.size-vs-weight .weigth span {
+  font-size: 17px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.components {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 470px;
+  font-family: 'Comfortaa', cursive;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 25px;
+}
+
+.components .leftcomponent {
+  padding-left: 32px;
+  position: relative;
+}
+
+.components .leftcomponent a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.components .leftcomponent::before {
+  content: "";
+  position: absolute;
+  background-image: url("https://www.flaticon.com/svg/vstatic/svg/149/149145.svg?token=exp=1618485279~hmac=35f53a2cfbb423d684c16fe2ac07d5d4");
+  width: 24px;
+  height: 24px;
+  left: 0;
+}
+
+.components .rigthcomponent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Comfortaa', cursive;
+  padding-top: 3px;
+}
+
+.components .rigthcomponent p {
+  font-size: 16px;
+  padding-right: 8px;
+}
+
+.components .rigthcomponent .ingTotalPrice {
+  font-size: 18px;
+  padding-right: 3px;
+}
+
+.components .rigthcomponent i {
+  font-size: 18px;
+  font-style: normal;
+}
+
+.prod-count {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 420px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prod-count p {
+  padding-top: 6px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.prod-count img {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.prod-count input {
+  width: 40px;
+  height: 40px;
+  margin: 0px 7px;
+  text-align: center;
+}
+
+.prod-count .rigth-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Comfortaa', cursive;
+  padding-top: 6px;
+}
+
+.prod-count .rigth-count p {
+  font-size: 16px;
+  padding-top: 4px;
+  padding-right: 7px;
+}
+
+.prod-count .rigth-count .ingTotalPrice {
+  font-size: 18px;
+  padding-right: 3px;
+  font-size: 24px;
+  color: #c80000;
+}
+
+.prod-count .rigth-count i {
+  font-size: 18px;
+  font-style: normal;
+  font-size: 24px;
+  color: #c80000;
+}
+
+.prod-price a {
+  -webkit-transition: .45s all;
+  transition: .45s all;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 180px;
+  height: 48px;
+  border-radius: 22px;
+  background-color: #c80000;
+  border: 1px solid #c80000;
+  font-size: 15px;
+  font-family: "Comfortaa", cursive;
+  color: #fefefe;
+  text-align: center;
+  line-height: 46px;
+}
+
+.prod-price a:hover {
+  background-color: white;
+  color: #dd0f0f;
+}
+
+.addComp {
+  padding-top: 3px;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+
+.addComp:hover {
+  color: #dd0f0f;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+  line-height: 54px;
+  font-family: "Comfortaa", cursive;
+  margin-bottom: 60px;
+}
+
+.more-gradient {
+  width: 1246px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block-grad {
+  width: 210px;
+  height: 214px;
+  padding-top: 4px;
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+  position: relative;
+}
+
+.block-grad p {
+  margin-bottom: 35px;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-weight: bold;
+}
+
+.block-grad i {
+  margin-left: -30px;
+  margin-right: 37px;
+  font-family: monospace;
+  font-size: 13px;
+  color: #4c4c4c;
+  padding: 0 16px;
+  font-weight: 300;
+}
+
+.img-block {
+  width: 110px;
+  height: 66px;
+  background-size: cover;
+  margin: 25px 55px;
+}
+
+.block-grad::before {
+  content: '';
+  position: absolute;
+  width: 210px;
+  height: 214px;
+  left: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 11px 6px;
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 11px 6px;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+  background-color: white;
+  opacity: 0;
+  z-index: -1;
+}
+
+.block-grad:hover::before {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+  z-index: -1;
+}
+/*# sourceMappingURL=pizza-dateil.component.css.map */

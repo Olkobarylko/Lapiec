@@ -1,0 +1,385 @@
+@charset "UTF-8";
+.fast-placed {
+  margin-top: 100px;
+  width: 100%;
+  height: 159px;
+  background-image: url("https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/img/delivery-pattern.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moto {
+  margin-top: 38px;
+  margin-left: -48px;
+  position: relative;
+}
+
+.moto img {
+  width: 130px;
+  height: 180px;
+}
+
+.moto::after {
+  content: "вже в дорозі";
+  position: absolute;
+  padding-left: 30px;
+  padding-top: 10px;
+  left: 77px;
+  background-image: url("https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/delivery-message.svg");
+  width: 130px;
+  height: 70px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  color: #dfdbdb;
+}
+
+.info-fast {
+  width: 1415px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-fast div {
+  width: 441px;
+  height: 60px;
+  text-align: center;
+}
+
+.btn-zones {
+  margin-top: 40px;
+}
+
+.btn-zones a {
+  width: 230px;
+  height: 48px;
+  background-color: #f7c200;
+  padding: 16px 46px 14px;
+  font-size: 15px;
+  font-family: 'Comfortaa', cursive;
+  line-height: 16px;
+  text-decoration: none;
+  color: #0e0e0e;
+  border: 1px solid #f7c200;
+  border-radius: 22px;
+  -webkit-transition: .25s all;
+  transition: .25s all;
+}
+
+.btn-zones a:hover {
+  background-color: transparent;
+  color: #f7c200;
+}
+
+.time-zones {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.time-zones span {
+  color: #f7c200;
+}
+
+.time-zones p {
+  color: white;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.shedule-zones {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.shedule-zones span {
+  color: white;
+  font-weight: 300;
+}
+
+.shedule-zones p {
+  color: #f7c200;
+  margin-bottom: 0px;
+}
+
+.photos-fast {
+  position: relative;
+}
+
+.photos-fast img {
+  margin-top: 89px;
+  height: 70px;
+  width: 140px;
+}
+
+.photos-fast::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 65px;
+  top: 10px;
+  -webkit-transform: rotate(11deg) translateX(0);
+          transform: rotate(11deg) translateX(0);
+  background-image: url("https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/apple.svg");
+  background-repeat: no-repeat;
+}
+
+.container-salads {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.block-salad {
+  width: 480px;
+  height: 800px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  z-index: 2;
+}
+
+.block-salad span {
+  position: absolute;
+  line-height: 65px;
+  padding-right: 15px;
+  width: 480px;
+  height: 65px;
+  top: 450px;
+  left: 0px;
+  color: white;
+  text-align: right;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.93) 0px -65px 35px -45px inset;
+          box-shadow: rgba(0, 0, 0, 0.93) 0px -65px 35px -45px inset;
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+}
+
+.block-salad .overflow {
+  position: relative;
+  overflow: hidden;
+}
+
+.block-salad .image-prod {
+  width: 480px;
+  height: 515px;
+  background-size: cover;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  overflow: hidden;
+}
+
+.block-salad h5 {
+  margin-top: 25px;
+  font-size: 24px;
+  font-family: 'Comfortaa', cursive;
+  height: 50px;
+}
+
+.block-salad p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  width: 480px;
+  height: 45px;
+}
+
+.block-salad h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.block-salad .table-salads {
+  width: 480px;
+  height: 55px;
+  border: 1px solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.block-salad .block-info {
+  width: 128px;
+  height: 55px;
+  position: relative;
+}
+
+.block-salad .block-info div,
+.block-salad .block-info h4 {
+  padding-top: 5px;
+  color: #333333;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.block-salad .block-info h4 {
+  font-weight: bold;
+}
+
+.block-salad .block-info::before {
+  content: "";
+  left: 120px;
+  top: 6px;
+  position: absolute;
+  height: 43px;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.order-prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 360px;
+  margin-left: 70px;
+}
+
+.order-prod span {
+  position: relative;
+  padding-right: 15px;
+  width: 480px;
+  height: 65px;
+  top: 0px;
+  left: 0px;
+  text-align: right;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: 'Comfortaa', cursive;
+  font-size: 28px;
+  line-height: 36px;
+  color: #c80000;
+}
+
+.order-prod i {
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  margin-left: -8px;
+}
+
+.prod-count img {
+  width: 10px;
+  height: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.prod-count input {
+  width: 40px;
+  height: 40px;
+  margin: 0px 7px;
+  text-align: center;
+}
+
+.prod-price a {
+  -webkit-transition: .45s all;
+  transition: .45s all;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 107px;
+  height: 28px;
+  border-radius: 22px;
+  background-color: #c80000;
+  border: 1px solid #c80000;
+  font-size: 13px;
+  font-family: "Comfortaa", cursive;
+  color: #fefefe;
+  text-align: center;
+  line-height: 28px;
+}
+
+.prod-price a:hover {
+  background-color: white;
+  color: #dd0f0f;
+}
+
+.block-salad::before {
+  content: "";
+  width: 490px;
+  height: 760px;
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: -5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 11px 6px;
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 11px 6px;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+  background-color: white;
+  z-index: -1000;
+}
+
+.block-salad:hover::before {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+  z-index: -1000;
+}
+
+.block-salad:hover .image-prod {
+  margin-left: -30px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: -1000;
+}
+
+.buble {
+  position: absolute;
+  margin-top: 50px;
+  text-align: center;
+  -webkit-transition-property: margin-top;
+  transition-property: margin-top;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  opacity: 0;
+}
+
+.buble p {
+  font-family: "Comfortaa", cursive;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.block-salad:hover .buble {
+  margin-top: 30px;
+  text-align: center;
+  opacity: 1;
+}
+
+.buble:hover p {
+  color: #dd0f0f;
+}
+/*# sourceMappingURL=pizza.component.css.map */

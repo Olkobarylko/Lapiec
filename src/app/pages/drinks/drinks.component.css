@@ -1,0 +1,142 @@
+.container-drinks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.block-drink {
+  height: 580px;
+  width: 350px;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+}
+
+.block-drink img {
+  height: 300px;
+  width: 300px;
+}
+
+.block-drink h5 {
+  margin-top: 25px;
+  font-size: 24px;
+  font-family: "Comfortaa", cursive;
+  color: #0e0e0e;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.block-drink .order-prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 180px;
+  margin-left: 100px;
+}
+
+.block-drink .order-prod span {
+  position: relative;
+  padding-right: 15px;
+  width: 480px;
+  height: 65px;
+  top: 0px;
+  left: 0px;
+  text-align: right;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: 'Comfortaa', cursive;
+  font-size: 28px;
+  line-height: 36px;
+  color: #c80000;
+}
+
+.block-drink .order-prod i {
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  margin-left: -8px;
+}
+
+.block-drink .prod-count {
+  margin-bottom: 10px;
+}
+
+.block-drink .prod-count p {
+  width: 60px;
+}
+
+.block-drink .prod-count img {
+  width: 10px;
+  height: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.block-drink .prod-count input {
+  width: 40px;
+  height: 40px;
+  margin: 0px 7px;
+  text-align: center;
+}
+
+a {
+  -webkit-transition: .45s all;
+  transition: .45s all;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 107px;
+  height: 28px;
+  border-radius: 22px;
+  background-color: #c80000;
+  border: 1px solid #c80000;
+  font-size: 13px;
+  font-family: "Comfortaa", cursive;
+  color: #fefefe;
+  text-align: center;
+  line-height: 28px;
+}
+
+a:hover {
+  background-color: white;
+  color: #dd0f0f;
+}
+
+.block-drink::before {
+  content: "";
+  position: absolute;
+  width: 377px;
+  height: 520px;
+  opacity: -1;
+  top: 30px;
+  left: -13px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 11px 6px;
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 11px 6px;
+  -webkit-transition: all .45s;
+  transition: all .45s;
+  background-color: white;
+  z-index: -1;
+}
+
+.block-drink:hover::before {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+  z-index: -1;
+}
+/*# sourceMappingURL=drinks.component.css.map */

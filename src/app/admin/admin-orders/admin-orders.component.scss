@@ -1,0 +1,41 @@
+.main-block {
+  width: 100%;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.order-block {
+  border: 1px solid rgb(236, 234, 234);
+  background-color: rgb(253, 251, 251);
+  border-radius: 15px;
+  min-height: 350px;
+  padding: 10px 25px;
+  font-family: 'Comfortaa', cursive;
+  ;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+
+    p {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 30px;
+        font-size: 24px;
+
+      }
+    }
+  }
+}
+
+textarea {
+  resize: none;
+  box-sizing: border-box;
+  padding: 8px;
+  height: 60px;
+}

@@ -1,0 +1,93 @@
+<header>
+  <div style="display: flex;justify-content: space-between;align-items: center;width: 98%;">
+    <div [routerLink]="[ '/pizza']" class="logo">
+      <img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/logo-dark.svg" alt="">
+    </div>
+    <div class="pages">
+      <a [routerLink]="['/promotions']">
+        <div><img src="https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/menu-icon-1.svg" alt="">
+          <p routerLinkActive="active-color">Акції</p>
+        </div>
+      </a>
+      <a [routerLink]="[ '/pizza']">
+        <div><img src="https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/menu-icon-2.svg" alt="">
+          <p routerLinkActive="active-color">Піца</p>
+        </div>
+      </a>
+      <a [routerLink]="[ '/salads']">
+        <div><img src="https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/menu-icon-3.svg" alt="">
+          <p routerLinkActive="active-color">Салати</p>
+        </div>
+      </a>
+      <a [routerLink]="[ '/desserts']">
+        <div><img src="https://www.lapiec-pizza.com.ua/wp-content/uploads/2021/03/deserty.svg" alt="">
+          <p routerLinkActive="active-color">Десерти</p>
+        </div>
+      </a>
+      <a [routerLink]="[ '/drinks']">
+        <div><img src="https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/menu-icon-4.svg" alt="">
+          <p routerLinkActive="active-color">Напої</p>
+        </div>
+      </a>
+      <a [routerLink]="[ '/payment']">
+        <div><img src="https://www.lapiec-pizza.com.ua/wp-content/uploads/2018/07/menu-icon-5.svg" alt="">
+          <p routerLinkActive="active-color">Оплата</p>
+        </div>
+      </a>
+      <a href="https://business.lapiec-pizza.com.ua/?utm_source=lapiec-pizza&utm_medium=referral&utm_campaign=headMenu">
+        <div><img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/img/business-lapiec-pizza.svg" alt="">
+          <p routerLinkActive="active-color">Франшиза</p>
+        </div>
+      </a>
+    </div>
+    <div class="empty-block"></div>
+    <div class="location">
+      <p>Львів</p>
+    </div>
+    <div class="info-users-block">
+      <div class="header-call">
+        <p class="tell-request">ми Вам перетелефонуємо</p>
+        <p class="tell-phone">097 440 40 60</p>
+      </div>
+      <div [routerLink]="[ '/basket']" class="header-order">
+        <img src="https://www.lapiec-pizza.com.ua/wp-content/themes/lapiec/fonts/svg-icons/shopping-cart.svg" alt="">
+        <div style="display: flex;"><span>{{totalPrice}}</span>
+          <div>грн</div>
+        </div>
+      </div>
+      <div class="header-user">
+        <a [routerLink]="[ '/'+loginPath]">
+          <p style="margin-top: 20px;" routerLinkActive="active-color" [textContent]="loginName">
+          </p>
+        </a>
+      </div>
+      <div class="header-lang">
+        <p>Укр</p>
+      </div>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" [(ngModel)]="checkBurger" name="checkBurger" >
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box" (click)="hideBurger()">
+          <li><a class="menu__item" [routerLink]="['/promotions']" routerLinkActive="active-burger">Акції</a></li>
+          <hr>
+          <li><a class="menu__item" [routerLink]="[ '/pizza']" routerLinkActive="active-burger">Піцца</a></li>
+          <hr>
+          <li><a class="menu__item" [routerLink]="[ '/salads']" routerLinkActive="active-burger">Салати</a></li>
+          <hr>
+          <li><a class="menu__item" [routerLink]="[ '/desserts']" routerLinkActive="active-burger">Десерти</a></li>
+          <hr>
+          <li><a class="menu__item" [routerLink]="[ '/drinks']" routerLinkActive="active-burger">Напої</a></li>
+          <hr>
+          <li><a class="menu__item" [routerLink]="[ '/payment']" routerLinkActive="active-burger">Оплата</a></li>
+          <hr>
+          <li><a class="menu__item"
+              href="https://business.lapiec-pizza.com.ua/?utm_source=lapiec-pizza&utm_medium=referral&utm_campaign=headMenu">Франшиза</a>
+          </li>
+          <hr>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

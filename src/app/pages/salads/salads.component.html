@@ -1,0 +1,50 @@
+<h3 class="header-component">Салати</h3>
+<div class="container-salads">
+  <div *ngFor="let salad of productArray" class="block-salad">
+    <div class="overflow">
+      <div class="image-prod" [ngStyle]="{'background-image': 'url(' + salad.image + ')'}"></div>
+    </div>
+    <div style="width: 100%;"><span>{{salad.weight}} гр</span>
+      <h5>{{salad.title}}</h5>
+      <p>{{salad.describe}}</p>
+      <h6>Поживна харчова цінність на 100 г продукту:</h6>
+      <div class="table-salads">
+        <div class="block-info">
+          <div>Білки</div>
+          <h4>{{salad.proteins}} г</h4>
+        </div>
+        <div class="block-info">
+          <div>Вуглеводи</div>
+          <h4>{{salad.carbohydrates}} г</h4>
+        </div>
+        <div class="block-info">
+          <div>Жири</div>
+          <h4>{{salad.jury}} г</h4>
+        </div>
+        <div class="block-info">
+          <div>Калорійність</div>
+          <h4>{{salad.caloric}} ккал</h4>
+        </div>
+      </div>
+      <hr>
+      <div class="order-prod">
+        <div class="prod-price">
+          <span>{{salad.price * salad.count}}</span>
+          <i>грн</i>
+        </div>
+        <div class="prod-count">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/lapiec-6c366.appspot.com/o/images%2Fpromotions%2Fredminus.png?alt=media&token=a0bfc7a0-26d2-4ae2-adf1-193b197792b4"
+            alt="" (click)="changeProductCount(salad,false)">
+          <input type="text" [value]="salad.count">
+          <img src="https://www.pngkey.com/png/full/6-60004_plus-sign-images-clipart-best-2hluoq-clipart-red.png" alt=""
+            (click)="changeProductCount(salad,true)">
+        </div>
+        <div class="prod-price">
+          <a class="aLink" class="aLink" (click)="addToBusket(salad)">Замовити</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
