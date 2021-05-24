@@ -104,7 +104,7 @@ export class BasketComponent implements OnInit {
     else {
       this.checkTel = false;
     }
-    this. checkAllChange();
+    this.checkAllChange();
   }
 
   onChangefirstName(newValue) {
@@ -114,7 +114,7 @@ export class BasketComponent implements OnInit {
     else {
       this.checkName = false;
     }
-    this. checkAllChange();
+    this.checkAllChange();
   }
 
   onChange(newValue) {
@@ -124,7 +124,7 @@ export class BasketComponent implements OnInit {
     else {
       this.checkDis = false;
     }
-    this. checkAllChange();
+    this.checkAllChange();
   }
 
   checkAllChange(): void {
@@ -133,6 +133,9 @@ export class BasketComponent implements OnInit {
     }
     else {
       this.checkNameTelDis = false;
+    }
+    if (this.phone.length > 0 && this.firstName.length > 0 && this.street.length > 0) {
+      this.checkNameTelDis = true;
     }
   }
 
